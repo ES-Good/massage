@@ -1,0 +1,15 @@
+.home, .servise {
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+p {
+  margin-bottom: 0; }
+
+.home {
+  background-image: url(../img/home/bg.jpg); }
+
+.girl {
+  background-color: #000; }
+
+.servise {
+  background-image: url(../img/services/bg.jpg); }

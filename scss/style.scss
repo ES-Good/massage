@@ -1,0 +1,22 @@
+%bg-img{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+p{
+    margin-bottom: 0;
+}
+
+.home{
+    @extend %bg-img;
+    background-image: url(../img/home/bg.jpg);
+}
+
+.girl{
+    background-color: #000;
+}
+
+.servise{
+    @extend %bg-img;
+    background-image: url(../img/services/bg.jpg);
+}
