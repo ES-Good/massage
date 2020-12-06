@@ -4,37 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MBAR.GO</title>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="fullPage.js-master/src/fullpage.css" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-md navbar-light fixed-top">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
       <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a href="#" class="navbar-brend flex-column text-decoration-none d-flex align-items-center">
-        <img src="img/logo/logo.png" alt="logo" class="logo-img">
+      <a href="#" class="navbar-brend flex-column text-decoration-none d-flex align-items-center mx-5">
+        <img src="img/logo/logo-header.png" alt="logo" class="logo-img">
       </a>
       <button type="button" class="btn phone-mobile  d-block d-md-none"><img src="img/phone/phone.png" alt=""></button>
       <div class="collapse navbar-collapse justify-content-start" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item text-center active">
-            <a class="nav-link" href="#">Девушки</a>
+            <a class="nav-link text-white text-white" href="#">Девушки</a>
           </li>
           <li class="nav-item text-center">
-            <a class="nav-link" href="#services">Услуги</a>
+            <a class="nav-link text-white" href="#services">Услуги</a>
           </li>
           <li class="nav-item text-center">
-            <a class="nav-link" href="#projects">Контакты</a>
+            <a class="nav-link text-white" href="#projects">Контакты</a>
           </li>
           <li class="nav-item text-center">
-            <a class="nav-link" href="#we">Вакансии</a>
+            <a class="nav-link text-white" href="#we">Вакансии</a>
           </li>
         </ul>
       </div>
-      <p class="phone-header text-blue d-none d-md-block mb-0">+7 (846) 379-62-76</p>
+      <a href="tel:+79270063006" class="phone-header text-blue d-none d-md-block mb-0">8 (927) 006-30-06</a>
     </nav>
     <div id="fullpage">
       <!-- home ----------------------------------------->
@@ -42,18 +45,33 @@
         <div class="container">
           <div class="row">
             <div class="col-12">
-              <h1>Lorem, ipsum dolor.</h1>
-              <h2>Lorem ipsum dolor sit amet.</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eveniet placeat adipisci omnis suscipit mollitia cupiditate cumque pariatur fugiat alias aperiam voluptatum reiciendis qui quos, rem exercitationem provident quasi corporis?</p>
-              <button>BTN</button>
+              <h1 class="title title_big home__title">Мужской<br><span>Бар-SPA</span></h1>
+              <h2 class="home__discription text-green title title_medium mb-5">В центре Самары</h2>
+              <p>Будь первым! Запишись на <span class="text-green">ТЕСТ-ДРАЙВ-ШОУ
+                «Foamy euphoria»</span> где ты сможешь познакомиться
+                с заведением, девушками и убедиться что мы
+                лучшие! Звони быстрее</p>
+              <button class="btn mt-5">Записатся</button>
             </div>
           </div>
         </div>
       </div>
       <!-- girl ---------------------------------------->
-      <div class="section girl">
-        <div class="slider">
-
+      <div class="section girl position-relative">
+        <div class="slider-girl">
+          <div class="slider-girl__slide"><img src="img/girl/slide-1.png" alt="" class="slide__img" data-boobs="1" data-name="Elizabeth" data-age="20"></div>
+          <div class="slider-girl__slide"><img src="img/girl/slide-1.png" alt="" class="slide__img" data-boobs="2" data-name="Elizabeth2" data-age="30"></div>
+          <div class="slider-girl__slide"><img src="img/girl/slide-1.png" alt="" class="slide__img" data-boobs="3" data-name="Elizabeth3" data-age="40"></div>
+        </div>
+        <div class="girl__description position-absolute">
+          <h3 class="title text-dark title_medium position-absolute girl__sub-title">Девушки</h3>
+          <h2 class="title title_medium" id="name-girl">Elizabeth</h2>
+          <div class="d-flex align-items-center">
+            <p class="text-green mr-4">объём <br> груди</p> <p class="title title_medium" id="boobs">2</p>
+          </div>
+          <div class="d-flex align-items-center">
+            <p class="text-green mr-3">Возраст</p> <p class="title title_medium" id="age">20</p>
+          </div>
         </div>
       </div>
       <!-- servise ------------------------------------->
@@ -61,30 +79,77 @@
         <div class="container">
           <div class="row">
             <div class="col-6">
-              <h2>lorem</h2>
-              <ul>
-                <li>lorem</li>
-                <li>lorem</li>
-                <li>lorem</li>
-                <li>lorem</li>
-                <li>lorem</li>
+              <h2 class="title title_big home__title">Программы</h2>
+              <h3 class="title text-dark title_medium servise__sub-title mb-5">мужского спа</h3>
+              <ul class="pl-0 mb-5">
+                <li class="d-flex justify-content-between"><span>Burlesque</span> <span><span class="mr-5 text-crossed">от 12 000 ₽</span><span>6 000 ₽</span></span></li>
+                <li class="d-flex justify-content-between"><span>Foamy euphoria</span><span>от 1 900 ₽</span></li>
+                <li class="d-flex justify-content-between"><span>Treatise of Desires</span><span>от 5 600 ₽</span></li>
+                <li class="d-flex justify-content-between"><span>Temptation</span><span>от 3 000 ₽</span></li>
+                <li class="d-flex justify-content-between"><span>Nonrandomness</span><span>от 4 500 ₽</span></li>
               </ul>
-              <div class="col-6">
-                <div class="modal-service">
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad maiores magni sequi.</p>
-                </div>
+              <button class="btn btn_none-style-btn text-green ml-2">Посмотреть все программы</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- contact ---------------------------------------->
+      <div class="section contact">
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <h2 class="title title_big home__title">Рады тебе</h2>
+              <h3 class="title text-dark title_medium servise__sub-title mb-5">Контакты</h3>
+              <div class="mb-5">
+                <p class="text-green">Мы находимся по адресу:</p>
+                <h5>г. Самара,<br>
+                  ул. Самарская д. 161а</h5>
+              </div>
+              <div class="mb-5">
+                <p class="text-green">Звоните по телефону:</p>
+                <h5>8 (927) 006-30-06</h5>
+              </div>
+              <button class="btn">Записатся</button>
+            </div>
+            <div class="col-6 mt-5">
+              <div class="contact__info">
+                <h6 class="mb-3">
+                  Вы ищите где расслабиться после
+                  трудного дня в Самаре?
+                </h6>
+                <p>
+                  Мужской спа-салон «Эмбарго» предложит
+                  на выбор 10 качественных spa программ,
+                  обратите внимание на программу «Burlesque»
+                  с пенным джакузи и продолжительностью
+                  120 минут, а также на «Infinity» где ты сам
+                  можешь составить себе индивидуальную
+                  программу. Все мастера мужского салона
+                  уникальные, прошедшие отбор на
+                  изумительную красоту, где каждая девушка
+                  имеет свой стиль и свою изюминку, посмотрите
+                  анкеты и узнайте больше о наших мастерах.
+
+                  Мужской клуб «Эмбарго» - это нежный
+                  и расслабляющий отдых для мужчины в Самаре.
+                  Подарите себе незабываемый день в мужском
+                  спа, куда точно захочется вернуться.
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="section">Определённый раздел4</div>
+      <div class="section vacancies">
+        slider
+      </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script type="text/javascript" src="fullPage.js-master/vendors/scrolloverflow.min.js"></script>
     <script type="text/javascript" src="fullPage.js-master/src/fullpage.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script> 
     <script src="js/common.js"></script>
 </body>
 </html>
