@@ -59,8 +59,11 @@
       <div class="section girl position-relative">
         <div class="slider-girl">
           <div class="slider-girl__slide"><img src="img/girl/slide-1.png" alt="" class="slide__img" data-boobs="1" data-name="Elizabeth" data-age="20"></div>
-          <div class="slider-girl__slide"><img src="img/girl/slide-1.png" alt="" class="slide__img" data-boobs="2" data-name="Elizabeth2" data-age="30"></div>
-          <div class="slider-girl__slide"><img src="img/girl/slide-1.png" alt="" class="slide__img" data-boobs="3" data-name="Elizabeth3" data-age="40"></div>
+          <div class="slider-girl__slide"><img src="img/girl/slide-1.png" alt="" class="slide__img" data-boobs="2" data-name="Zoya" data-age="30"></div>
+          <div class="slider-girl__slide"><img src="img/girl/slide-1.png" alt="" class="slide__img" data-boobs="3" data-name="Nika" data-age="40"></div>
+          <div class="slider-girl__slide"><img src="img/girl/slide-1.png" alt="" class="slide__img" data-boobs="3" data-name="Nona" data-age="40"></div>
+          <div class="slider-girl__slide"><img src="img/girl/slide-1.png" alt="" class="slide__img" data-boobs="3" data-name="Alexandra" data-age="40"></div>
+          
         </div>
         <div class="girl__description position-absolute">
           <h3 class="title text-dark title_medium position-absolute girl__sub-title">Девушки</h3>
@@ -81,13 +84,35 @@
               <h2 class="title title_big home__title">Программы</h2>
               <h3 class="title text-dark title_medium servise__sub-title mb-5">мужского спа</h3>
               <ul class="pl-0 mb-5">
-                <li class="d-flex justify-content-between"><span>Burlesque</span> <span><span class="mr-5 text-crossed">от 12 000 ₽</span><span>6 000 ₽</span></span></li>
-                <li class="d-flex justify-content-between"><span>Foamy euphoria</span><span>от 1 900 ₽</span></li>
-                <li class="d-flex justify-content-between"><span>Treatise of Desires</span><span>от 5 600 ₽</span></li>
-                <li class="d-flex justify-content-between"><span>Temptation</span><span>от 3 000 ₽</span></li>
-                <li class="d-flex justify-content-between"><span>Nonrandomness</span><span>от 4 500 ₽</span></li>
+                <li class="d-flex justify-content-between item-programm" data-nameProgramm="Burlesque"><span>Burlesque</span> <span><span class="mr-5 text-crossed">от 12 000 ₽</span><span><b>6 000 ₽</b></span></span></li>
+                <li class="d-flex justify-content-between item-programm" data-nameProgramm="Foamy euphoria"><span>Foamy euphoria</span><span><b>от 1 900 ₽</b></span></li>
+                <li class="d-flex justify-content-between item-programm" data-nameProgramm="Treatise of Desires"><span>Treatise of Desires</span><span><b>от 5 600 ₽</b></span></li>
+                <li class="d-flex justify-content-between item-programm" data-nameProgramm="Temptation"><span>Temptation</span><span><b>от 3 000 ₽</b></span></li>
+                <li class="d-flex justify-content-between item-programm" data-nameProgramm="Nonrandomness"><span>Nonrandomness</span><span><b>от 4 500 ₽</b></span></li>
+                <div id="close-list" class="d-none">
+                  <li class="d-flex justify-content-between item-programm" data-nameProgramm="Sirens"><span>Sirens</span> <span><span><b>8 000 ₽</b></span></span></li>
+                  <li class="d-flex justify-content-between item-programm" data-nameProgramm="WeAreCrazy"><span>WeAreCrazy</span><span><b>от 10 000 ₽</b></span></li>
+                  <li class="d-flex justify-content-between item-programm" data-nameProgramm="The Taming of the Shrew"><span>The Taming of the Shrew</span><span><b>от 7 600 ₽</b></span></li>
+                  <li class="d-flex justify-content-between item-programm" data-nameProgramm="Infinity"><span>Infinity</span><span><b>от 3 000 ₽</b></span></li>
+                  <li class="d-flex justify-content-between item-programm" data-nameProgramm="Solo"><span>Solo</span><span><b>от 6 500 ₽</b></span></li>
+                </div>
               </ul>
-              <button class="btn btn_none-style-btn text-green ml-2">Посмотреть все программы</button>
+              <button class="btn btn_none-style-btn text-green ml-2" id="btn-show-price-list">Посмотреть все программы</button>
+            </div>
+            <div class="col-5 position-relative">
+              <div class="servise__info-programs">
+                <div class="servise__info-programs__body">
+                  <p id="description">Самое быстрое наслаждение, заряженное
+                    на все 100. Начни рабочий день
+                    с небольшого отдыха.</p>
+                    <div id="description-price">
+                      <p>C 1 девушкой</p>
+                      <p>30 минут</p>
+                      <p>1 900 руб.</p>
+                    </div>
+                </div>
+                <button class="btn btn_green mt-5">Записатся</button>
+              </div>
             </div>
           </div>
         </div>

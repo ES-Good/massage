@@ -91,6 +91,7 @@ a{
 
     &_green{
         background-color: #9f957f;
+        border: 1px solid #201e1e;
         color: #000;
     }
 }
@@ -146,6 +147,8 @@ a{
         list-style: none;
         li{
             padding: 5px 10px;
+            margin: 15px 0;
+            cursor: pointer;
             &:hover span{
                 color: #000;
             }
@@ -155,11 +158,32 @@ a{
         }
     }
 
+    &__info-programs{
+        background-color: rgba(32, 30, 30, 0.8);
+        border: 1px solid #968c77;
+        padding: 30px 40px;
+        position: absolute;
+        bottom: 0;
+        width: 80%;
+        right: 0;
+
+        &__body{
+            div{
+                display: flex;
+                justify-content: space-between;
+            }
+            #description{
+                margin-bottom: 3rem;
+            }
+        }
+    }
+
 }
 
 .contact{
     @extend %bg-img;
     background-image: url(../img/contact/bg.jpg);
+    background-position: center 80%;
 
     &__info{
         background-color: rgba($color: #201e1e, $alpha: 0.8);

@@ -66,6 +66,7 @@ a {
     font-size: 18px; }
   .btn_green {
     background-color: #9f957f;
+    border: 1px solid #201e1e;
     color: #000; }
 
 .home {
@@ -100,14 +101,30 @@ a {
   .servise ul {
     list-style: none; }
     .servise ul li {
-      padding: 5px 10px; }
+      padding: 5px 10px;
+      margin: 15px 0;
+      cursor: pointer; }
       .servise ul li:hover span {
         color: #000; }
       .servise ul li:hover {
         background-color: #9f957f; }
+  .servise__info-programs {
+    background-color: rgba(32, 30, 30, 0.8);
+    border: 1px solid #968c77;
+    padding: 30px 40px;
+    position: absolute;
+    bottom: 0;
+    width: 80%;
+    right: 0; }
+    .servise__info-programs__body div {
+      display: flex;
+      justify-content: space-between; }
+    .servise__info-programs__body #description {
+      margin-bottom: 3rem; }
 
 .contact {
-  background-image: url(../img/contact/bg.jpg); }
+  background-image: url(../img/contact/bg.jpg);
+  background-position: center 80%; }
   .contact__info {
     background-color: rgba(32, 30, 30, 0.8);
     border: 1px solid #968c77;
