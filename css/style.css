@@ -122,6 +122,9 @@ a {
     .servise__info-programs__body #description {
       margin-bottom: 3rem; }
 
+.item-programm__active {
+  background-color: #9f957f; }
+
 .contact {
   background-image: url(../img/contact/bg.jpg);
   background-position: center 80%; }

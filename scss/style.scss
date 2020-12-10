@@ -180,6 +180,10 @@ a{
 
 }
 
+.item-programm__active{
+    background-color: #9f957f;
+}
+
 .contact{
     @extend %bg-img;
     background-image: url(../img/contact/bg.jpg);
@@ -253,7 +257,6 @@ a{
         filter: grayscale(1);
     }
 }
-
 
 
 .slick-list{

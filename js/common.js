@@ -8,7 +8,7 @@ const listProgramm = document.querySelectorAll('.item-programm');
 const price = 
 {
 	Burlesque:{
-		description: '<p>...Пенное джакузи, наслаждение ласками девушки,поцелуи и взбитые сливки слизанные с вашего тела... Сыграем?</p>',
+		description: '...Пенное джакузи, наслаждение ласками девушки,поцелуи и взбитые сливки слизанные с вашего тела... Сыграем?</p>',
 		descriptionPrice:`<p>C 1 девушкой</p>
 						<p>120 минут</p>
 						<p>6 000 руб.</p>`
@@ -190,5 +190,8 @@ function showDescriptionProgramm(item) {
 }
 
 for (let i = 0; i < listProgramm.length; i++) {
-	console.log(typeof showDescriptionProgramm(listProgramm[i]));
+	listProgramm[i].onclick = function(){
+		listProgramm[i].classList.add('item-programm__active');
+		console.log(showDescriptionProgramm(listProgramm[i]))
+	}
 }
