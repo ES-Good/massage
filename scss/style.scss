@@ -77,9 +77,12 @@ a{
     width: 300px;
     text-align: center;
     padding: 15px 0;
+    transition: background-color .3s, border .5s;
 
     &:hover{
         color: #fff;
+        background-color: #9f957f;
+        border: 2px solid #9f957f;
     }
 
     &_none-style-btn{
@@ -87,12 +90,32 @@ a{
         border: none;
         padding: 0;
         font-size: 18px;
+
+        &:hover{
+            background-color: transparent;
+            border: none;
+            color: #fff;
+        }
     }
 
     &_green{
         background-color: #9f957f;
         border: 1px solid #201e1e;
         color: #000;
+        transition: background-color .3s, border .5s;
+
+        &:hover{
+            border:1px solid #fff;
+            background-color: transparent;
+        }
+    }
+
+    &_call{
+        font-size: 14px;
+
+        &:hover{
+            background-color: transparent
+        }
     }
 }
 
@@ -292,4 +315,10 @@ a{
 
 .text-crossed{
     text-decoration: line-through;
+}
+
+.ban{
+    z-index: 200;
+    right: 10px;
+    bottom: 10px;
 }

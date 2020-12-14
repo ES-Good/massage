@@ -31,12 +31,12 @@
           <li class="nav-item text-center">
             <a class="nav-link text-white" href="#projects">Контакты</a>
           </li>
-          <li class="nav-item text-center">
-            <a class="nav-link text-white" href="#we">Вакансии</a>
-          </li>
         </ul>
       </div>
-      <a href="tel:+79270063006" class="phone-header text-blue d-none d-md-block mb-0">8 (927) 006-30-06</a>
+      <div class="d-none d-md-flex flex-column align-items-end">
+        <a href="tel:+79270063006" class="phone-header text-blue mb-0">8 (927) 006-30-06</a>
+        <button class="btn btn_call p-0 border-0 text-green w-auto">Заказать звонок</button>
+      </div>
     </nav>
     <div id="fullpage">
       <!-- home ----------------------------------------->
@@ -59,10 +59,10 @@
       <div class="section girl position-relative">
         <div class="slider-girl">
           <div class="slider-girl__slide"><img src="img/girl/1.jpg" alt="" class="slide__img" data-boobs="1" data-name="Elizabeth" data-age="20"></div>
-          <div class="slider-girl__slide"><img src="img/girl/slide-1.png" alt="" class="slide__img" data-boobs="2" data-name="Zoya" data-age="30"></div>
-          <div class="slider-girl__slide"><img src="img/girl/slide-1.png" alt="" class="slide__img" data-boobs="3" data-name="Nika" data-age="40"></div>
-          <div class="slider-girl__slide"><img src="img/girl/slide-1.png" alt="" class="slide__img" data-boobs="3" data-name="Nona" data-age="40"></div>
-          <div class="slider-girl__slide"><img src="img/girl/slide-1.png" alt="" class="slide__img" data-boobs="3" data-name="Alexandra" data-age="40"></div>
+          <div class="slider-girl__slide"><img src="img/girl/2.jpg" alt="" class="slide__img" data-boobs="2" data-name="Zoya" data-age="30"></div>
+          <div class="slider-girl__slide"><img src="img/girl/3.jpg" alt="" class="slide__img" data-boobs="3" data-name="Nika" data-age="40"></div>
+          <div class="slider-girl__slide"><img src="img/girl/4.jpg" alt="" class="slide__img" data-boobs="3" data-name="Nona" data-age="40"></div>
+          <div class="slider-girl__slide"><img src="img/girl/5.jpg" alt="" class="slide__img" data-boobs="3" data-name="Alexandra" data-age="40"></div>
           
         </div>
         <div class="girl__description position-absolute">
@@ -74,6 +74,7 @@
           <div class="d-flex align-items-center">
             <p class="text-green mr-3">Возраст</p> <p class="title title_medium" id="age">20</p>
           </div>
+          <button class="btn mt-5">Записатся</button>
         </div>
       </div>
       <!-- servise ------------------------------------->
@@ -85,7 +86,7 @@
               <h3 class="title text-dark title_medium servise__sub-title mb-5">мужского спа</h3>
               <ul class="pl-0 mb-5 sas">
                 <li class="d-flex justify-content-between item-programm" data-nameProgramm="Burlesque"><span>Burlesque</span> <span><span class="mr-5 text-crossed">от 12 000 ₽</span><span><b>6 000 ₽</b></span></span></li>
-                <li class="d-flex justify-content-between item-programm" data-nameProgramm="Foamy euphoria"><span>Foamy euphoria</span><span><b>от 1 900 ₽</b></span></li>
+                <li class="d-flex justify-content-between item-programm item-programm__active" data-nameProgramm="Foamy euphoria"><span>Foamy euphoria</span><span><b>от 1 900 ₽</b></span></li>
                 <li class="d-flex justify-content-between item-programm" data-nameProgramm="Treatise of Desires"><span>Treatise of Desires</span><span><b>от 5 600 ₽</b></span></li>
                 <li class="d-flex justify-content-between item-programm" data-nameProgramm="Temptation"><span>Temptation</span><span><b>от 3 000 ₽</b></span></li>
                 <li class="d-flex justify-content-between item-programm" data-nameProgramm="Nonrandomness"><span>Nonrandomness</span><span><b>от 4 500 ₽</b></span></li>
@@ -108,13 +109,8 @@
                     <div id="description-price">
                       <div>
                         <p>C 1 девушкой</p>
-                        <p>60 минут</p>
-                        <p>5 600 руб.</p>
-                      </div>
-                      <div>
-                        <p>C 1 девушкой</p>
-                        <p>90 минут</p>
-                        <p>6 900 руб.</p>
+                        <p>30 минут</p>
+                        <p>1 900 руб.</p>
                       </div>
                     </div>
                 </div>
@@ -171,9 +167,10 @@
           </div>
         </div>
       </div>
-      <div class="section vacancies">
-        slider
-      </div>
+    </div>
+    <div class="ban position-fixed d-flex flex-wrap flex-xl-column justify-content-center">
+      <img src="img/warning/21+.png" alt="" class="mb-0 mb-xl-3 mr-3 mr-xl-0">
+      <img src="img/warning/not-sex.png" alt="">
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
