@@ -1,20 +1,22 @@
 const btnShowPriceList = document.getElementById('btn-show-price-list');
 const closeList = document.getElementById('close-list');
 
-const descriptioPrice = document.getElementById('description-price');
-const descriptio = document.getElementById('description');
+const descriptionPrice = document.getElementById('description-price');
+const description = document.getElementById('description');
 const listProgramm = document.querySelectorAll('.item-programm');
 
 const price = 
 {
 	Burlesque:{
-		description: '...Пенное джакузи, наслаждение ласками девушки,поцелуи и взбитые сливки слизанные с вашего тела... Сыграем?</p>',
-		descriptionPrice:`<p>C 1 девушкой</p>
+		description: '...Пенное джакузи, наслаждение ласками девушки,поцелуи и взбитые сливки слизанные с вашего тела... Сыграем?',
+		descriptionPrice:`<div>
+						<p>C 1 девушкой</p>
 						<p>120 минут</p>
-						<p>6 000 руб.</p>`
+						<p>6 000 руб.</p>
+						</div>`
 	},
 	FoamyEuphoria:{
-		description: '<p>Самое быстрое наслаждение, заряженное на все 100. Начни рабочий день с небольшого отдыха.</p>',
+		description: 'Самое быстрое наслаждение, заряженное на все 100. Начни рабочий день с небольшого отдыха.',
 		descriptionPrice:`<div>
 						<p>C 1 девушкой</p>
 						<p>30 минут</p>
@@ -22,7 +24,7 @@ const price =
 						</div>`
 	},
 	TreatiseDesires:{
-		description: '<p>Воплоти страсти в любой позе Камасутры.</p>',
+		description: 'Воплоти страсти в любой позе Камасутры.',
 		descriptionPrice:`<div>
 							<p>C 1 девушкой</p>
 							<p>60 минут</p>
@@ -35,7 +37,7 @@ const price =
 						</div>`
 	},
 	Temptation:{
-		description: '<p>Самое быстрое наслаждение, заряженное на все 100. Начни рабочий день с небольшого отдыха.</p>',
+		description: 'Самое быстрое наслаждение, заряженное на все 100. Начни рабочий день с небольшого отдыха.',
 		descriptionPrice:`<div>
 							<p>C 1 девушкой</p>
 							<p>60 минут</p>
@@ -43,7 +45,7 @@ const price =
 						</div>`
 	},
 	Nonrandomness:{
-		description: '<p>В шаге от соблазнительных поцелуев и нежных покусываний до стретты оральных удовольствий.</p>',
+		description: 'В шаге от соблазнительных поцелуев и нежных покусываний до стретты оральных удовольствий.',
 		descriptionPrice:`<div>
 							<p>C 1 девушкой</p>
 							<p>60 минут</p>
@@ -56,7 +58,7 @@ const price =
 						</div>`
 	},
 	Sirens:{
-		description: '<p>Чувствуешь как они манят тебя? Две девушки,с какой дойти до конца, решать только тебе.</p>',
+		description: 'Чувствуешь как они манят тебя? Две девушки,с какой дойти до конца, решать только тебе.',
 		descriptionPrice:`<div>
 							<p>C 2 девушками</p>
 							<p>90 минут</p>
@@ -69,7 +71,7 @@ const price =
 						</div>`
 	},
 	WeAreCrazy:{
-		description: '<p>Мои подружки-лесбиянки. Попробуешь стать их другом?</p>',
+		description: 'Мои подружки-лесбиянки. Попробуешь стать их другом?',
 		descriptionPrice:`<div>
 							<p>C 2 девушками</p>
 							<p>60 минут</p>
@@ -87,7 +89,7 @@ const price =
 						</div>`
 	},
 	TheTamingOfTheShrew:{
-		description: '<p>Ты пробовал совместить боль и ласку,унижение и уважение? Госпожа знает подход к Боссу.</p>',
+		description: 'Ты пробовал совместить боль и ласку,унижение и уважение? Госпожа знает подход к Боссу.',
 		descriptionPrice:`<div>
 							<p>C 1 девушкой</p>
 							<p>60 минут</p>
@@ -105,7 +107,7 @@ const price =
 						</div>`
 	},
 	Infinity:{
-		description: '<p>Каждый знает об этой программе, потому что составляет её сам. Только лучшие техники на твой выбор.</p>',
+		description: 'Каждый знает об этой программе, потому что составляет её сам. Только лучшие техники на твой выбор.',
 		descriptionPrice:`<div>
 							<p>C 1 девушкой</p>
 							<p>60 минут</p>
@@ -123,7 +125,7 @@ const price =
 						</div>`
 	},
 	Solo:{
-		description: '<p>Стань режиссёром фильма, где девушка ласкает себя игрушками, не забывая о тебе.</p>',
+		description: 'Стань режиссёром фильма, где девушка ласкает себя игрушками, не забывая о тебе.',
 		descriptionPrice:`<div>
 							<p>C 1 девушкой</p>
 							<p>60 минут</p>
@@ -186,6 +188,51 @@ btnShowPriceList.onclick = function () {
 
 function showDescriptionProgramm(item) {
 	let name = item.getAttribute('data-nameProgramm');
+	switch (name) {
+		case 'Burlesque':
+			description.innerText = price.Burlesque.description;
+			descriptionPrice.innerHTML = price.Burlesque.descriptionPrice;
+			break;
+		case 'Foamy euphoria':
+			description.innerText = price.FoamyEuphoria.description;
+			descriptionPrice.innerHTML = price.FoamyEuphoria.descriptionPrice;
+			break;
+		case 'Treatise of Desires':
+			description.innerText = price.TreatiseDesires.description;
+			descriptionPrice.innerHTML = price.TreatiseDesires.descriptionPrice;
+			break;
+		case 'Temptation':
+			description.innerText = price.Temptation.description;
+			descriptionPrice.innerHTML = price.Temptation.descriptionPrice;
+			break;
+		case 'Nonrandomness':
+			description.innerText = price.Nonrandomness.description;
+			descriptionPrice.innerHTML = price.Nonrandomness.descriptionPrice;
+			break;
+		case 'Sirens':
+			description.innerText = price.Sirens.description;
+			descriptionPrice.innerHTML = price.Sirens.descriptionPrice;
+			break;
+		case 'WeAreCrazy':
+			description.innerText = price.WeAreCrazy.description;
+			descriptionPrice.innerHTML = price.WeAreCrazy.descriptionPrice;
+			break;
+		case 'The Taming of the Shrew':
+			description.innerText = price.TheTamingOfTheShrew.description;
+			descriptionPrice.innerHTML = price.TheTamingOfTheShrew.descriptionPrice;
+			break;
+		case 'Infinity':
+			description.innerText = price.Infinity.description;
+			descriptionPrice.innerHTML = price.Infinity.descriptionPrice;
+			break;	
+		case 'Solo':
+			description.innerText = price.Solo.description;
+			descriptionPrice.innerHTML = price.Solo.descriptionPrice;
+			break;
+
+		default:
+			break;
+	}
 	return name;
 }
 
@@ -195,3 +242,8 @@ for (let i = 0; i < listProgramm.length; i++) {
 		console.log(showDescriptionProgramm(listProgramm[i]))
 	}
 }
+
+$('.item-programm').click(function(){                        //style-active-list
+	$('.item-programm').removeClass('item-programm__active');
+	$(this).addClass('item-programm__active');
+});

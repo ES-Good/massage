@@ -118,9 +118,16 @@ a {
     right: 0; }
     .servise__info-programs__body div {
       display: flex;
-      justify-content: space-between; }
+      flex-direction: column;
+      justify-content: start; }
     .servise__info-programs__body #description {
       margin-bottom: 3rem; }
+
+#description-price div {
+  margin: 5px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
 
 .item-programm__active {
   background-color: #9f957f; }
