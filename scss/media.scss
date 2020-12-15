@@ -1,5 +1,7 @@
 @media(min-width:576px){
-
+    .logo-img{
+        width: 150px;
+    }
 }
 
 @media(min-width:768px){
@@ -7,9 +9,37 @@
 }
 
 @media(min-width:992px){
+    .home{
+        padding-left: 190px;
+        p{
+            background-color: rgba($color: #000, $alpha: 0.8);
+            padding: 20px 30px;
+            width: 50%;
+        }
+        &__discription{
+            margin-left: -50px;
+        }
+        &__title{
+            line-height: 90px;
+        }
+    }
+    .title{
 
+        &_big{
+            font-size: 90px;
+        }
+    
+        &_medium{
+            font-size: 60px;
+        }
+    }
 }
 
 @media(min-width:1200px){
-    
+    .contact{
+        &__info{
+            padding: 45px 130px 45px 80px;
+
+        }
+    }
 }

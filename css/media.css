@@ -1,0 +1,23 @@
+@media (min-width: 576px) {
+  .logo-img {
+    width: 150px; } }
+
+@media (min-width: 992px) {
+  .home {
+    padding-left: 190px; }
+    .home p {
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 20px 30px;
+      width: 50%; }
+    .home__discription {
+      margin-left: -50px; }
+    .home__title {
+      line-height: 90px; }
+  .title_big {
+    font-size: 90px; }
+  .title_medium {
+    font-size: 60px; } }
+
+@media (min-width: 1200px) {
+  .contact__info {
+    padding: 45px 130px 45px 80px; } }

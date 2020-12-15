@@ -139,17 +139,23 @@ const price =
 	},
 };
 
+if ($('body').width() > 1200) {
+	new fullpage('#fullpage', {
+		//options here
+		css3: true,
+		controlArrows: false,
+		anchors: ['home', 'girl', 'services', 'contact'],
+		menu: '#sideMenu',
+		loopBottom: true,
+		parallax: true,
+		scrollingSpeed: 1000
+	});
+	//methods
+	fullpage_api.setAllowScrolling(true);
+}
 
-new fullpage('#fullpage', {
-	//options here
-	autoScrolling:true,
-	scrollHorizontally: true,
-	loopBottom: true,
-	parallax: true
-});
 
-//methods
-fullpage_api.setAllowScrolling(true);
+
 
 $('.slider-girl').slick({
 	prevArrow: '<button class="slick-prev slick-arrow prev-girl" aria-label="Previous" type="button" style="">Previous</button>',

@@ -59,12 +59,12 @@ a{
 
     &_big{
         font-family: "BanderaProHeavy";
-        font-size: 90px;
+        font-size: 38px;
     }
 
     &_medium{
         font-family: "BanderaProHeavy";
-        font-size: 60px;
+        font-size: 30px;
     }
 }
 
@@ -119,26 +119,38 @@ a{
     }
 }
 
+.navbar-nav{
+    .active{
+        border-bottom: 1px solid #9f957f;
+        transition: border-bottom .5s;
+        .nav-link{
+            color: #9f957f !important;
+        }
+    }
+}
+
+.logo-img{
+    width: 100px;
+}
 
 .home{
     @extend %bg-img;
     background-image: url(../img/home/bg.jpg);
-    padding-left: 190px;
+    padding-left: 0px;
+    padding-top: 100px;
 
     &__title{
-        line-height: 70px;
+        line-height: 35px;
         span{
             margin-left: 20%;
         }
     }
 
     &__discription{
-        margin-left: -50px;
+        margin-left: 0px;
     }
     p{
-        background-color: rgba($color: #000, $alpha: 0.8);
-        padding: 20px 30px;
-        width: 50%; 
+        width: 70%;
     }
 }
 
@@ -165,6 +177,22 @@ a{
     }
 }
 
+.line{
+    position: absolute;
+    width: 50%;
+    height: 1px;
+    background-color: #fff;
+    transform: rotate(-30deg);
+
+    &_l{
+        left: -180px;
+        bottom: 304px;
+    }
+    &_r{
+        right: -220px;
+    }
+}
+
 .servise{
     @extend %bg-img;
     background-image: url(../img/services/bg.jpg);
@@ -177,8 +205,6 @@ a{
         height: 260px;
         overflow-y: auto;
         list-style: none;
-        scrollbar-color: #458245 #714826;     /* «цвет ползунка» «цвет полосы скроллбара» */
-        scrollbar-width: auto | thin | none;  /* толщина */
         li{
             padding: 5px 10px;
             margin: 15px 0;
@@ -236,7 +262,7 @@ a{
     &__info{
         background-color: rgba($color: #201e1e, $alpha: 0.8);
         border: 1px solid #968c77;
-        padding: 45px 130px 45px 80px;
+        padding: 5px;
     }
     h5{
         font-size: 20px;
