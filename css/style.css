@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "BanderaProHeavy";
   src: url("../fonts/BanderaProHeavy.woff") format("woff"), url("../fonts/BanderaProHeavy.woff2") format("woff2");
@@ -45,7 +46,7 @@ a {
   font-size: 90px; }
 
 .title_medium {
-  font-family: "BanderaPro";
+  font-family: "BanderaProHeavy";
   font-size: 60px; }
 
 .btn {
@@ -108,13 +109,25 @@ a {
     top: -60px;
     left: -100px;
     font-size: 50px; }
+  .girl .btn {
+    width: 280px;
+    position: absolute;
+    bottom: -240px;
+    left: 22%;
+    transform: translateX(-50%); }
 
 .servise {
   background-image: url(../img/services/bg.jpg); }
   .servise__sub-title {
     margin-left: 30%; }
   .servise ul {
-    list-style: none; }
+    height: 260px;
+    overflow-y: auto;
+    list-style: none;
+    scrollbar-color: #458245 #714826;
+    /* «цвет ползунка» «цвет полосы скроллбара» */
+    scrollbar-width: auto | thin | none;
+    /* толщина */ }
     .servise ul li {
       padding: 5px 10px;
       margin: 15px 0;

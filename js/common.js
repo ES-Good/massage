@@ -247,3 +247,11 @@ $('.item-programm').click(function(){                        //style-active-list
 	$('.item-programm').removeClass('item-programm__active');
 	$(this).addClass('item-programm__active');
 });
+
+(function($) { //castom scroll
+    $(window).on('load', function() {
+        $('.custom-scroll').mCustomScrollbar({
+			
+		});
+    });
+})(jQuery);

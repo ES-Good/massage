@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MBAR.GO</title>
+    <link rel="stylesheet" href="mCustomScrollbar/jquery.mCustomScrollbar.min.css">
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -63,7 +64,6 @@
           <div class="slider-girl__slide"><img src="img/girl/3.jpg" alt="" class="slide__img" data-boobs="3" data-name="Nika" data-age="40"></div>
           <div class="slider-girl__slide"><img src="img/girl/4.jpg" alt="" class="slide__img" data-boobs="3" data-name="Nona" data-age="40"></div>
           <div class="slider-girl__slide"><img src="img/girl/5.jpg" alt="" class="slide__img" data-boobs="3" data-name="Alexandra" data-age="40"></div>
-          
         </div>
         <div class="girl__description position-absolute">
           <h3 class="title text-dark title_medium position-absolute girl__sub-title">Девушки</h3>
@@ -84,7 +84,7 @@
             <div class="col-6">
               <h2 class="title title_big home__title">Программы</h2>
               <h3 class="title text-dark title_medium servise__sub-title mb-5">мужского спа</h3>
-              <ul class="pl-0 mb-5 sas">
+              <ul class="pl-0 mb-5 custom-scroll" data-mcs-theme="rounded-dots">
                 <li class="d-flex justify-content-between item-programm" data-nameProgramm="Burlesque"><span>Burlesque</span> <span><span class="mr-5 text-crossed">от 12 000 ₽</span><span><b>6 000 ₽</b></span></span></li>
                 <li class="d-flex justify-content-between item-programm item-programm__active" data-nameProgramm="Foamy euphoria"><span>Foamy euphoria</span><span><b>от 1 900 ₽</b></span></li>
                 <li class="d-flex justify-content-between item-programm" data-nameProgramm="Treatise of Desires"><span>Treatise of Desires</span><span><b>от 5 600 ₽</b></span></li>
@@ -178,6 +178,7 @@
     <script type="text/javascript" src="fullPage.js-master/vendors/scrolloverflow.min.js"></script>
     <script type="text/javascript" src="fullPage.js-master/src/fullpage.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script> 
+    <script src="mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="js/common.js"></script>
 </body>
 </html>
