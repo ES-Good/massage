@@ -183,6 +183,24 @@ a {
       justify-content: start; }
     .servise__info-programs__body #description {
       margin-bottom: 3rem; }
+  .servise .card {
+    background-color: transparent; }
+  .servise .card-header .btn {
+    border: none;
+    width: auto;
+    font-size: 18px; }
+    .servise .card-header .btn:hover, .servise .card-header .btn:focus {
+      background-color: transparent;
+      box-shadow: none; }
+  .servise .card-body .btn {
+    width: 230px;
+    margin-top: 15px; }
+
+.description-price_mobile div {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
 
 #description-price div {
   margin: 5px 0;
@@ -270,3 +288,5 @@ a {
   z-index: 200;
   right: 10px;
   bottom: 10px; }
+  .ban img {
+    width: 60px; }

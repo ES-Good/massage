@@ -257,6 +257,40 @@ a{
         }
     }
 
+    .card{
+        background-color: transparent;
+    }
+    
+    .card-header{
+        .btn{
+            border: none;
+            width: auto;
+            font-size: 18px;
+    
+            &:hover,
+            &:focus{
+                background-color: transparent;
+                box-shadow: none;
+            }
+        }
+    }
+
+    .card-body{
+        .btn{
+            width: 230px;
+            margin-top: 15px;
+        }
+    }
+
+}
+
+.description-price_mobile{
+    div{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
 
 #description-price{
@@ -378,4 +412,8 @@ a{
     z-index: 200;
     right: 10px;
     bottom: 10px;
+
+    img{
+        width: 60px;
+    }
 }
