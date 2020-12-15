@@ -48,6 +48,24 @@ a {
   font-family: "BanderaProHeavy";
   font-size: 30px; }
 
+.btn-mobile_girl {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  border: 2px solid #fff;
+  border-radius: 0;
+  color: #fff;
+  width: 300px;
+  text-align: center;
+  padding: 10px 0;
+  background-color: transparent;
+  transition: background-color .3s, border .5s;
+  right: 0;
+  bottom: 40px;
+  position: absolute;
+  width: 170px;
+  left: auto;
+  transform: translateX(0px); }
+
 .btn {
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
@@ -107,15 +125,15 @@ a {
     width: 70%; }
 
 .girl {
-  background-color: #04060C; }
+  background-color: #04060C;
+  padding: 200px 0; }
   .girl__description {
     top: 20%;
-    left: 38%;
-    transform: translateX(-50%); }
+    left: 3%; }
   .girl__sub-title {
     top: -60px;
-    left: -100px;
-    font-size: 50px; }
+    left: 0;
+    font-size: 30px; }
   .girl .btn {
     width: 280px;
     position: absolute;
@@ -177,11 +195,12 @@ a {
 
 .contact {
   background-image: url(../img/contact/bg.jpg);
-  background-position: center 80%; }
+  background-position: center 80%;
+  padding: 200px 0; }
   .contact__info {
-    background-color: rgba(32, 30, 30, 0.8);
+    background-color: rgba(32, 30, 30, 0.9);
     border: 1px solid #968c77;
-    padding: 5px; }
+    padding: 20px; }
   .contact h5 {
     font-size: 20px; }
   .contact P {
@@ -192,23 +211,24 @@ a {
   background-color: #000; }
 
 .slider-girl {
-  width: 500px;
-  margin: 0 auto;
-  transform: translateX(10%); }
+  width: 100%;
+  margin: 0;
+  transform: translateX(10%);
+  right: 30px; }
 
 .prev-girl,
 .next-girl {
-  top: 105%; }
+  top: 145%; }
 
 .prev-girl {
-  left: -150px; }
+  left: 0px; }
 
 .next-girl {
-  left: 0; }
+  left: 75px; }
 
 .slick-prev:before, .slick-next:before {
   font-family: none;
-  font-size: 80px;
+  font-size: 60px;
   color: #9f957f; }
 
 .slick-active {
@@ -223,7 +243,7 @@ a {
   outline: none;
   padding: 0 40px; }
   .slider-girl__slide img {
-    width: 285px;
+    width: 160px;
     transition: transform 1s, margin-left 1s; }
   .slider-girl__slide:not(.slick-active) {
     filter: grayscale(1); }

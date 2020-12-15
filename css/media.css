@@ -1,6 +1,43 @@
 @media (min-width: 576px) {
   .logo-img {
-    width: 150px; } }
+    width: 150px; }
+  .slider-girl__slide {
+    outline: none;
+    padding: 0 40px; }
+    .slider-girl__slide img {
+      width: 285px;
+      transition: transform 1s, margin-left 1s; }
+    .slider-girl__slide:not(.slick-active) {
+      filter: grayscale(1); }
+  .prev-girl, .next-girl {
+    top: 127%; } }
+
+@media (min-width: 768px) {
+  .girl {
+    padding: 0; }
+    .girl__description {
+      top: 20%;
+      left: 38%;
+      transform: translateX(-50%); }
+    .girl__sub-title {
+      top: -60px;
+      left: -100px;
+      font-size: 50px; }
+    .girl .slick-prev:before, .girl .slick-next:before {
+      font-family: none;
+      font-size: 80px;
+      color: #9f957f; }
+  .slider-girl {
+    width: 500px;
+    margin: 0 auto;
+    transform: translateX(10%); }
+  .prev-girl,
+  .next-girl {
+    top: 105%; }
+  .prev-girl {
+    left: -150px; }
+  .next-girl {
+    left: 0; } }
 
 @media (min-width: 992px) {
   .home {
