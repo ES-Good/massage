@@ -257,8 +257,15 @@ a{
         }
     }
 
+    .show{
+        border-top: 1px solid #968c77;
+        border-bottom: 1px solid #968c77;
+
+    }
+
     .card{
         background-color: transparent;
+        border: none;
     }
     
     .card-header{

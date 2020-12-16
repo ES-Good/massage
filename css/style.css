@@ -183,8 +183,12 @@ a {
       justify-content: start; }
     .servise__info-programs__body #description {
       margin-bottom: 3rem; }
+  .servise .show {
+    border-top: 1px solid #968c77;
+    border-bottom: 1px solid #968c77; }
   .servise .card {
-    background-color: transparent; }
+    background-color: transparent;
+    border: none; }
   .servise .card-header .btn {
     border: none;
     width: auto;
