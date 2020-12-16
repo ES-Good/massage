@@ -5,6 +5,10 @@ const descriptionPrice = document.getElementById('description-price');
 const description = document.getElementById('description');
 const listProgramm = document.querySelectorAll('.item-programm');
 
+const mobileMenuItem = document.querySelectorAll('.nav-link_mobile');
+const btnOpenSite = document.getElementById('open-site');
+const banner = document.querySelector('.warning');
+
 const price = 
 {
 	Burlesque:{
@@ -261,3 +265,17 @@ $('.item-programm').click(function(){                        //style-active-list
 		});
     });
 })(jQuery);
+
+
+for (let i = 0; i < mobileMenuItem.length; i++) {
+	const element = mobileMenuItem[i];
+
+	element.onclick = function () {
+		document.querySelector('.navbar-collapse').classList.remove('show');
+	}	
+}
+
+btnOpenSite.onclick = function () {
+	banner.classList.remove('d-flex');
+	banner.classList.add('d-none');
+}

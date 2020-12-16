@@ -66,6 +66,10 @@ a{
         font-family: "BanderaProHeavy";
         font-size: 30px;
     }
+
+    &_modal{
+        font-family: "BanderaProHeavy";
+    }
 }
 
 .btn-mobile_girl{
@@ -138,6 +142,10 @@ a{
     }
 }
 
+.nav-link{
+    font-size: 28px;
+}
+
 .navbar-nav{
     .active{
         border-bottom: 1px solid #9f957f;
@@ -152,11 +160,52 @@ a{
     width: 100px;
 }
 
+.warning{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba($color: #000000, $alpha: .9);
+    z-index: 1100;
+
+    h3{
+        font-family: "BanderaProHeavy";
+    }
+
+    div{
+        width: 300px;
+    }
+
+    button{
+        width: 250px;
+        
+    }
+}
+
+.modal-content{
+    border: 1px solid #9f957f;
+    background-image: url(../img/modal/bg.jpg);
+    background-size: 260%;
+    background-position-x: -400px;
+    background-repeat: no-repeat;
+
+    .btn{
+        width: 200px;
+        margin: 0 auto;
+        font-size: 18px;
+        padding: 10px 0;
+    }
+
+    input{
+        background-color: #1c1e20;
+        padding: 10px;
+    }
+}
+
 .home{
     @extend %bg-img;
     background-image: url(../img/home/bg.jpg);
     padding-left: 0px;
-    padding-top: 100px;
+    padding-top: 130px;
 
     &__title{
         line-height: 35px;
@@ -210,6 +259,11 @@ a{
         right: -220px;
     }
 }
+
+.navbar{
+    background-color: #000;
+}
+
 
 .servise{
     @extend %bg-img;

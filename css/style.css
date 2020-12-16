@@ -48,6 +48,9 @@ a {
   font-family: "BanderaProHeavy";
   font-size: 30px; }
 
+.title_modal {
+  font-family: "BanderaProHeavy"; }
+
 .btn-mobile_girl {
   font-family: 'Montserrat', sans-serif;
   font-size: 18px;
@@ -102,6 +105,9 @@ a {
     .btn_call:hover {
       background-color: transparent; }
 
+.nav-link {
+  font-size: 28px; }
+
 .navbar-nav .active {
   border-bottom: 1px solid #9f957f;
   transition: border-bottom .5s; }
@@ -111,10 +117,38 @@ a {
 .logo-img {
   width: 100px; }
 
+.warning {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 1100; }
+  .warning h3 {
+    font-family: "BanderaProHeavy"; }
+  .warning div {
+    width: 300px; }
+  .warning button {
+    width: 250px; }
+
+.modal-content {
+  border: 1px solid #9f957f;
+  background-image: url(../img/modal/bg.jpg);
+  background-size: 260%;
+  background-position-x: -400px;
+  background-repeat: no-repeat; }
+  .modal-content .btn {
+    width: 200px;
+    margin: 0 auto;
+    font-size: 18px;
+    padding: 10px 0; }
+  .modal-content input {
+    background-color: #1c1e20;
+    padding: 10px; }
+
 .home {
   background-image: url(../img/home/bg.jpg);
   padding-left: 0px;
-  padding-top: 100px; }
+  padding-top: 130px; }
   .home__title {
     line-height: 35px; }
     .home__title span {
@@ -152,6 +186,9 @@ a {
     bottom: 304px; }
   .line_r {
     right: -220px; }
+
+.navbar {
+  background-color: #000; }
 
 .servise {
   background-image: url(../img/services/bg.jpg); }

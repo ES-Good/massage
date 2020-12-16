@@ -18,15 +18,21 @@
     .prev-girl, .next-girl {
         top: 127%;
     }
+    .modal-content{
+        border: 1px solid #9f957f;
+        background-image: url(../img/modal/bg.jpg);
+        background-size: 142%;
+        background-position-x: -200px;
+        background-repeat: no-repeat;
+    }
 }
 
 @media(min-width:768px){
     .girl{
-        padding: 0;
 
         &__description{
             top: 20%;
-            left: 38%;
+            left: 28%;
             transform: translateX(-50%);
         }
 
@@ -62,7 +68,13 @@
     .next-girl{
         left: 0;
     }
-    
+    .nav-link{
+        font-size: 18px;
+    }
+
+    .navbar{
+        background-color: rgba($color: #000000, $alpha: .7);
+    }
 }
 
 @media(min-width:992px){
@@ -90,6 +102,10 @@
             font-size: 60px;
         }
     }
+
+    .contact{
+        padding: 0;
+    }
 }
 
 @media(min-width:1200px){
@@ -103,5 +119,11 @@
         img{
             width: 80px;
         }
+    }
+    .girl{
+        padding: 0;
+    }
+    .navbar{
+        background-color: transparent;
     }
 }
