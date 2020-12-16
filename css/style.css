@@ -171,7 +171,7 @@ a {
   .girl .btn {
     width: 280px;
     position: absolute;
-    bottom: -240px;
+    bottom: -150px;
     left: 22%;
     transform: translateX(-50%); }
 
@@ -191,7 +191,8 @@ a {
   background-color: #000; }
 
 .servise {
-  background-image: url(../img/services/bg.jpg); }
+  background-image: url(../img/services/bg.jpg);
+  background-position-x: center; }
   .servise__sub-title {
     margin-left: 30%; }
   .servise ul {
