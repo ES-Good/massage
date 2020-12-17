@@ -64,19 +64,13 @@
 
 @media (min-width: 992px) {
   .home {
-    background-position-x: -390px; }
+    background-position-x: inherit; }
     .home p {
       background-color: rgba(0, 0, 0, 0.8);
       padding: 20px 30px;
       width: 50%; }
     .home__discription {
       margin-left: -50px; }
-    .home__title {
-      line-height: 90px; }
-  .title_big {
-    font-size: 90px; }
-  .title_medium {
-    font-size: 60px; }
   .ban {
     left: auto;
     right: 10px; }
@@ -86,6 +80,8 @@
 @media (min-width: 1200px) {
   .home {
     background-position-x: left; }
+    .home__title {
+      line-height: 90px; }
   .contact__info {
     padding: 45px 130px 45px 80px; }
   .ban img {
@@ -93,7 +89,11 @@
   .girl {
     padding: 0; }
   .navbar {
-    background-color: transparent; } }
+    background-color: transparent; }
+  .title_big {
+    font-size: 90px; }
+  .title_medium {
+    font-size: 60px; } }
 
 @media screen and (min-height: 768px) and (max-height: 960px) {
   .home p {
@@ -101,14 +101,14 @@
   .home__inner {
     width: 70%;
     position: absolute;
-    bottom: 27%;
-    left: 3%; } }
+    bottom: 20%;
+    left: 8%; } }
 
 @media screen and (min-height: 960px) and (max-height: 1024px) {
   .home__inner {
     width: 90%;
     position: absolute;
-    bottom: 20%;
+    bottom: 30%;
     left: 7%; } }
 
 @media screen and (min-height: 1024px) {

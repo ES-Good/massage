@@ -106,7 +106,7 @@
 
 @media(min-width:992px){
     .home{
-        background-position-x: -390px;
+        background-position-x: inherit;
         p{
             background-color: rgba($color: #000, $alpha: 0.8);
             padding: 20px 30px;
@@ -114,19 +114,6 @@
         }
         &__discription{
             margin-left: -50px;
-        }
-        &__title{
-            line-height: 90px;
-        }
-    }
-    .title{
-
-        &_big{
-            font-size: 90px;
-        }
-    
-        &_medium{
-            font-size: 60px;
         }
     }
 
@@ -143,6 +130,10 @@
 @media(min-width:1200px){
     .home{
         background-position-x: left;
+
+        &__title{
+            line-height: 90px;
+        }
     }
 
     .contact{
@@ -162,6 +153,16 @@
     .navbar{
         background-color: transparent;
     }
+    .title{
+
+        &_big{
+            font-size: 90px;
+        }
+    
+        &_medium{
+            font-size: 60px;
+        }
+    }
 }
 
 @media screen and (min-height: 768px) and (max-height: 960px){
@@ -173,8 +174,8 @@
         &__inner{
             width: 70%;
             position: absolute;
-            bottom: 27%;
-            left: 3%;
+            bottom: 20%;
+            left: 8%;
         }
     }
 }
@@ -184,7 +185,7 @@
         &__inner{
             width: 90%;
             position: absolute;
-            bottom: 20%;
+            bottom: 30%;
             left: 7%;
         }
     }
