@@ -24,6 +24,15 @@ body{
     color: #fff;
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
+    height: 100%;
+}
+
+html{
+    height: 100%;
+}
+
+.section{
+    height: 100%;
 }
 
 *{
@@ -204,8 +213,6 @@ a{
 .home{
     @extend %bg-img;
     background-image: url(../img/home/bg.jpg);
-    padding-left: 0px;
-    padding-top: 130px;
 
     &__title{
         line-height: 35px;
