@@ -61,7 +61,7 @@
 
 @media (min-width: 992px) {
   .home {
-    padding-left: 190px; }
+    background-position-x: -390px; }
     .home p {
       background-color: rgba(0, 0, 0, 0.8);
       padding: 20px 30px;
@@ -74,10 +74,16 @@
     font-size: 90px; }
   .title_medium {
     font-size: 60px; }
+  .ban {
+    left: auto;
+    right: 10px; }
   .contact {
     padding: 0; } }
 
 @media (min-width: 1200px) {
+  .home {
+    background-position-x: left;
+    padding-left: 190px; }
   .contact__info {
     padding: 45px 130px 45px 80px; }
   .ban img {

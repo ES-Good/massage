@@ -103,7 +103,7 @@
 
 @media(min-width:992px){
     .home{
-        padding-left: 190px;
+        background-position-x: -390px;
         p{
             background-color: rgba($color: #000, $alpha: 0.8);
             padding: 20px 30px;
@@ -127,12 +127,23 @@
         }
     }
 
+    .ban{
+        left: auto;
+        right: 10px;
+    }
+
     .contact{
         padding: 0;
     }
 }
 
 @media(min-width:1200px){
+    .home{
+        background-position-x: left;
+
+        padding-left: 190px;
+    }
+
     .contact{
         &__info{
             padding: 45px 130px 45px 80px;
