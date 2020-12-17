@@ -32,7 +32,10 @@
       font-family: "BanderaPro";
       font-size: 42px; }
     .home__inner {
-      margin-top: 140px; }
+      width: 90%;
+      position: absolute;
+      bottom: 10%;
+      left: 10%; }
   .girl__description {
     top: 20%;
     left: 28%;
@@ -82,8 +85,7 @@
 
 @media (min-width: 1200px) {
   .home {
-    background-position-x: left;
-    padding-left: 190px; }
+    background-position-x: left; }
   .contact__info {
     padding: 45px 130px 45px 80px; }
   .ban img {

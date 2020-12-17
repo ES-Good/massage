@@ -52,7 +52,10 @@
         }
 
         &__inner{
-            margin-top: 140px;
+            width: 90%;
+            position: absolute;
+            bottom: 10%;
+            left: 10%;
         }
     }
 
@@ -140,8 +143,6 @@
 @media(min-width:1200px){
     .home{
         background-position-x: left;
-
-        padding-left: 190px;
     }
 
     .contact{
