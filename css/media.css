@@ -63,14 +63,10 @@
     font-size: 18px; } }
 
 @media (min-width: 992px) {
-  .home {
-    background-position-x: inherit; }
-    .home p {
-      background-color: rgba(0, 0, 0, 0.8);
-      padding: 20px 30px;
-      width: 50%; }
-    .home__discription {
-      margin-left: -50px; }
+  .home p {
+    width: 50%; }
+  .home__discription {
+    margin-left: -50px; }
   .ban {
     left: auto;
     right: 10px; }
@@ -79,7 +75,7 @@
 
 @media (min-width: 1200px) {
   .home {
-    background-position-x: left; }
+    background-position-x: center; }
     .home__title {
       line-height: 90px; }
   .contact__info {

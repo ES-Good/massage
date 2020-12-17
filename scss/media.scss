@@ -106,10 +106,9 @@
 
 @media(min-width:992px){
     .home{
-        background-position-x: inherit;
         p{
-            background-color: rgba($color: #000, $alpha: 0.8);
-            padding: 20px 30px;
+            // background-color: rgba($color: #000, $alpha: 0.8);
+            // padding: 20px 30px;
             width: 50%;
         }
         &__discription{
@@ -129,7 +128,7 @@
 
 @media(min-width:1200px){
     .home{
-        background-position-x: left;
+        background-position-x: center;
 
         &__title{
             line-height: 90px;
