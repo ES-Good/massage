@@ -281,7 +281,6 @@ a{
 
 .girl{
     background-color: #04060C;
-    padding: 200px 0;
     &__description{
         top: 20%;
         left: 3%;
@@ -425,7 +424,6 @@ a{
     @extend %bg-img;
     background-image: url(../img/contact/bg.jpg);
     background-position: center 80%;
-    padding: 200px 0;
 
     &__info{
         background-color: rgba($color: #201e1e, $alpha: 0.9);

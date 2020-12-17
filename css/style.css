@@ -201,8 +201,7 @@ a {
     width: 70%; }
 
 .girl {
-  background-color: #04060C;
-  padding: 200px 0; }
+  background-color: #04060C; }
   .girl__description {
     top: 20%;
     left: 3%; }
@@ -294,8 +293,7 @@ a {
 
 .contact {
   background-image: url(../img/contact/bg.jpg);
-  background-position: center 80%;
-  padding: 200px 0; }
+  background-position: center 80%; }
   .contact__info {
     background-color: rgba(32, 30, 30, 0.9);
     border: 1px solid #968c77;
