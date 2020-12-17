@@ -106,11 +106,13 @@
 
 @media(min-width:992px){
     .home{
+
         p{
             // background-color: rgba($color: #000, $alpha: 0.8);
             // padding: 20px 30px;
             width: 50%;
         }
+
         &__discription{
             margin-left: -50px;
         }
@@ -166,6 +168,7 @@
 
 @media screen and (min-height: 768px) and (max-height: 960px){
     .home{
+        
         p{
             font-size: 14px;
         }
@@ -173,7 +176,7 @@
         &__inner{
             width: 70%;
             position: absolute;
-            bottom: 20%;
+            top: 20%;
             left: 8%;
         }
     }
@@ -184,7 +187,7 @@
         &__inner{
             width: 90%;
             position: absolute;
-            bottom: 30%;
+            top: 30%;
             left: 7%;
         }
     }
@@ -194,7 +197,6 @@
     .home{
         &__inner{
             top: 20%;
-            bottom: auto;
         }
     }
 }
