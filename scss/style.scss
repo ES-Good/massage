@@ -291,7 +291,7 @@ a{
         left: 0;
         font-size: 30px;
     }
-    .btn{
+    &__btn{
         width: 280px;
         position: absolute;
         bottom: -150px;
@@ -326,7 +326,7 @@ a{
         margin-left: 30%;
     }
 
-    ul{
+    .custom-scroll{
         height: 260px;
         overflow-y: auto;
         list-style: none;
@@ -464,7 +464,7 @@ a{
 }
 
 .slick-prev:before, .slick-next:before{
-    font-family: none;
+    font-family: 'Montserrat';
     font-size: 60px;
     color: #9f957f;
 }

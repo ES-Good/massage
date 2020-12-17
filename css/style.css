@@ -209,7 +209,7 @@ a {
     top: -60px;
     left: 0;
     font-size: 30px; }
-  .girl .btn {
+  .girl__btn {
     width: 280px;
     position: absolute;
     bottom: -150px;
@@ -233,17 +233,17 @@ a {
   background-position-x: center; }
   .servise__sub-title {
     margin-left: 30%; }
-  .servise ul {
+  .servise .custom-scroll {
     height: 260px;
     overflow-y: auto;
     list-style: none; }
-    .servise ul li {
+    .servise .custom-scroll li {
       padding: 5px 10px;
       margin: 15px 0;
       cursor: pointer; }
-      .servise ul li:hover span {
+      .servise .custom-scroll li:hover span {
         color: #000; }
-      .servise ul li:hover {
+      .servise .custom-scroll li:hover {
         background-color: #9f957f; }
   .servise__info-programs {
     background-color: rgba(32, 30, 30, 0.8);
@@ -324,7 +324,7 @@ a {
   left: 75px; }
 
 .slick-prev:before, .slick-next:before {
-  font-family: none;
+  font-family: 'Montserrat';
   font-size: 60px;
   color: #9f957f; }
 
