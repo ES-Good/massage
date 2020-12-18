@@ -163,20 +163,16 @@ const ageGirl = document.getElementById('age');
 const nameGirl = document.getElementById('name-girl');
 
 
-function changeDescriptionGirl() {
-	setTimeout(function () {
-		sizeBoobs.innerText = document.querySelector('.slick-active').lastChild.getAttribute('data-boobs');
-		ageGirl.innerText = document.querySelector('.slick-active').lastChild.getAttribute('data-age');
-		nameGirl.innerText = document.querySelector('.slick-active').lastChild.getAttribute('data-name');
-	},500)
-}
+// function changeDescriptionGirl() {
+// 	setTimeout(function () {
+// 		sizeBoobs.innerText = document.querySelector('.slick-active').lastChild.getAttribute('data-boobs');
+// 		ageGirl.innerText = document.querySelector('.slick-active').lastChild.getAttribute('data-age');
+// 		nameGirl.innerText = document.querySelector('.slick-active').lastChild.getAttribute('data-name');
+// 	},500)
+// }
 
-changeDescriptionGirl();
+// changeDescriptionGirl();
 
-btnShowPriceList.onclick = function () {
-	closeList.classList.remove('d-none');
-	btnShowPriceList.classList.add('d-none');
-}
 
 function showDescriptionProgramm(item) {
 	let name = item.getAttribute('data-nameProgramm');
@@ -257,7 +253,16 @@ for (let i = 0; i < mobileMenuItem.length; i++) {
 	}	
 }
 
-btnOpenSite.onclick = function () {
-	banner.classList.remove('d-flex');
-	banner.classList.add('d-none');
+// btnOpenSite.onclick = function () {
+// 	banner.classList.remove('d-flex');
+// 	banner.classList.add('d-none');
+// }
+
+$('.navbar-toggler').onclick = function(){
+	alert('sas')
 }
+
+document.querySelector('.navbar-toggler').onclick = function () {
+	document.querySelector('.navbar').classList.toggle('bg-black')
+}
+

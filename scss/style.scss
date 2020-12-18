@@ -44,6 +44,10 @@ html{
     max-width: 1600px;
 }
 
+.bg-black{
+    background-color: #000;
+}
+
 p{
     margin-bottom: 0;
 }
@@ -322,10 +326,6 @@ a{
     background-image: url(../img/services/bg.jpg);
     background-position-x: center;
 
-    &__sub-title{
-        margin-left: 30%;
-    }
-
     .custom-scroll{
         height: 260px;
         overflow-y: auto;
@@ -365,9 +365,7 @@ a{
     }
 
     .show{
-        border-top: 1px solid #968c77;
-        border-bottom: 1px solid #968c77;
-
+        
     }
 
     .card{

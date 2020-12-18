@@ -33,6 +33,9 @@ html {
 .container {
   max-width: 1600px; }
 
+.bg-black {
+  background-color: #000; }
+
 p {
   margin-bottom: 0; }
 
@@ -231,8 +234,6 @@ a {
 .servise {
   background-image: url(../img/services/bg.jpg);
   background-position-x: center; }
-  .servise__sub-title {
-    margin-left: 30%; }
   .servise .custom-scroll {
     height: 260px;
     overflow-y: auto;
@@ -259,9 +260,6 @@ a {
       justify-content: start; }
     .servise__info-programs__body #description {
       margin-bottom: 3rem; }
-  .servise .show {
-    border-top: 1px solid #968c77;
-    border-bottom: 1px solid #968c77; }
   .servise .card {
     background-color: transparent;
     border: none; }
