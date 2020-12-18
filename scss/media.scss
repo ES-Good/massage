@@ -41,6 +41,7 @@
 
     .home{
         background-position-x: center;
+        padding-top: 0;
 
         &__title{
             line-height: 55px;
@@ -129,6 +130,9 @@
             width: 100%;
             right: 3px;
         }
+    }
+    .navbar{
+        background-color: transparent;
     }
 }
 
@@ -282,6 +286,12 @@
 
         img{
             width: 300px;
+        }
+    }
+
+    .girl{
+        .title_medium{
+            font-size: 60px;
         }
     }
 

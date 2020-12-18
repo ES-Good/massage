@@ -25,7 +25,8 @@
     right: auto;
     left: 0; }
   .home {
-    background-position-x: center; }
+    background-position-x: center;
+    padding-top: 0; }
     .home__title {
       line-height: 55px; }
     .home__discription {
@@ -76,7 +77,9 @@
       padding: 5px 0; }
     .servise__info-programs {
       width: 100%;
-      right: 3px; } }
+      right: 3px; }
+  .navbar {
+    background-color: transparent; } }
 
 @media (min-width: 992px) {
   .home p {
@@ -151,6 +154,8 @@
     top: 35%; }
     .slider-girl img {
       width: 300px; }
+  .girl .title_medium {
+    font-size: 60px; }
   .contact__info {
     padding: 45px 80px 45px 50px; }
   .contact .container {

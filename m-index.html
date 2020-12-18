@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MBAR.GO</title>
+    <link rel="stylesheet" href="mCustomScrollbar/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="fullPage.js-master/src/fullpage.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/mobile.css">
+</head>
+<body>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded-0">
+          <div class="row">
+            <div class="col-5 d-none d-md-block"></div>
+            <div class="col-12 col-md-7">
+              <h4 class="title_modal my-5 text-center">Записатся на услугу</h4>
+              <form action="" class="d-flex flex-column align-items-center">
+                <input type="text" class="my-3" placeholder="Представтесь">
+                <input type="tel" class="my-3" placeholder="+7(___) ___ __ __">
+                <button type="submit" class="btn my-3">Записатся</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="warning d-flex align-items-center justify-content-center">
+      <div class="d-flex flex-column align-items-center">
+        <h3 class="my-3">Проверка возраста</h3>
+        <p class="my-3 text-center">Сайт содержит информацию, предназначенную <span class="text-green">для лиц старше 21 год.</span></p>
+        <button class="btn btn_green mt-3 mb-2" id="open-site"><b>Я старше 21 года</b></button>
+        <a href="https://www.google.com/" class="btn btn_none-style-btn mt-4">Мне нет 21 года</a>
+      </div>
+    </div> -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a href="#" class="navbar-brend flex-column text-decoration-none d-flex align-items-center mx-md-5">
+        <img src="img/logo/logo-header.png" alt="logo" class="logo-img">
+      </a>
+      <div class="collapse navbar-collapse justify-content-start" id="navbarNav">
+        <ul class="navbar-nav mt-5 mt-md-0" id="sideMenu">
+          <li class="nav-item text-center" data-menuanchor="home">
+            <a class="nav-link text-white d-none d-md-block" href="#home">Главная</a>
+            <a class="nav-link_mobile nav-link text-white d-block d-md-none" href="#home-mobile">Главная</a>
+          </li>
+          <li class="nav-item text-center" data-menuanchor="girl">
+            <a class="nav-link text-white d-none d-md-block" href="#girl">Девушки</a>
+            <a class="nav-link_mobile nav-link text-white d-block d-md-none" href="#girl-mobile">Девушки</a>
+          </li>
+          <li class="nav-item text-center" data-menuanchor="services">
+            <a class="nav-link text-white d-none d-md-block" href="#services">Услуги</a>
+            <a class="nav-link_mobile nav-link text-white d-block d-md-none" href="#services-mobile">Услуги</a>
+          </li>
+          <li class="nav-item text-center" data-menuanchor="contact">
+            <a class="nav-link text-white d-none d-md-block" href="#contact">Контакты</a>
+            <a class="nav-link_mobile nav-link text-white d-block d-md-none" href="#contact-mobile">Контакты</a>
+          </li>
+        </ul>
+        <div class="d-flex d-md-none flex-column align-items-center mx-auto mt-5">
+          <a href="tel:+79270063006" class="phone-header text-blue mb-0">8 (927) 006-30-06</a>
+          <button class="btn btn_call p-0 border-0 text-green w-auto">Заказать звонок</button>
+        </div>
+        <div class="ban-menu d-flex d-md-none justify-content-center my-3">
+          <img src="img/warning/21+.png" alt="" class="mb-0 mb-xl-3 mr-3">
+          <img src="img/warning/not-sex.png" alt="">
+        </div>
+      </div>
+      <div class="d-none d-md-flex flex-column align-items-end">
+        <a href="tel:+79270063006" class="phone-header text-blue mb-0">8 (927) 006-30-06</a>
+        <button class="btn btn_call p-0 border-0 text-green w-auto">Заказать звонок</button>
+      </div>
+    </nav>
+    <div id="fullpage">
+      <!-- home ----------------------------------------->
+      <div class="section home" data-anchor="home" id="home-mobile">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h1 class="title title_big home__title">Мужской<br><span>Бар-SPA</span></h1>
+              <h2 class="home__discription text-green title title_medium mb-5">В центре Самары</h2>
+              <p>Будь первым! Запишись на <span class="text-green">ТЕСТ-ДРАЙВ-ШОУ
+                «Foamy euphoria»</span> где ты сможешь познакомиться
+                с заведением, девушками и убедиться что мы
+                лучшие! Звони быстрее</p>
+              <button class="btn mt-5" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Записатся</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- girl ---------------------------------------->
+      <div class="section girl position-relative overflow-hidden" data-anchor="girl" id="girl-mobile">
+        <div class="line line_l"></div>
+        <div class="line line_r"></div>
+        <div class="slider-girl">
+          <div class="slider-girl__slide"><img src="img/girl/1.jpg" alt="" class="slide__img" data-boobs="1" data-name="Zoya" data-age="25"></div>
+          <div class="slider-girl__slide"><img src="img/girl/2.jpg" alt="" class="slide__img" data-boobs="1" data-name="Elizabeth" data-age="29"></div>
+          <div class="slider-girl__slide"><img src="img/girl/3.jpg" alt="" class="slide__img" data-boobs="2" data-name="Nika" data-age="27"></div>
+          <div class="slider-girl__slide"><img src="img/girl/4.jpg" alt="" class="slide__img" data-boobs="3" data-name="Nona" data-age="25"></div>
+          <div class="slider-girl__slide"><img src="img/girl/5.jpg" alt="" class="slide__img" data-boobs="2" data-name="Alexandra" data-age="28"></div>
+        </div>
+        <div class="girl__description position-absolute">
+          <h3 class="title text-dark title_medium position-absolute girl__sub-title">Девушки</h3>
+          <h2 class="title title_medium" id="name-girl">Elizabeth</h2>
+          <div class="d-flex align-items-center">
+            <p class="text-green mr-4">объём <br> груди</p> <p class="title title_medium" id="boobs">1</p>
+          </div>
+          <div class="d-flex align-items-center">
+            <p class="text-green mr-3">Возраст</p> <p class="title title_medium" id="age">20</p>
+          </div>
+          <button class="btn mt-5 d-none d-md-block" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Записатся</button>
+        </div>
+        <button class="btn-mobile_girl mt-5 d-block d-md-none" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Записатся</button>
+      </div>
+      <!-- servise ------------------------------------->
+      <div class="section servise" data-anchor="servise" id="services-mobile">
+        <div class="container">
+          <div class="row d-none d-xl-flex">
+            <div class="col-6">
+              <h2 class="title title_big home__title">Программы</h2>
+              <h3 class="title text-dark title_medium servise__sub-title mb-5">мужского спа</h3>
+              <ul class="pl-0 mb-5 custom-scroll" data-mcs-theme="rounded-dots">
+                <li class="d-flex justify-content-between item-programm" data-nameProgramm="Burlesque"><span>Burlesque</span> <span><span class="mr-5 text-crossed">от 12 000 ₽</span><span><b>6 000 ₽</b></span></span></li>
+                <li class="d-flex justify-content-between item-programm item-programm__active" data-nameProgramm="Foamy euphoria"><span>Foamy euphoria</span><span><b>от 1 900 ₽</b></span></li>
+                <li class="d-flex justify-content-between item-programm" data-nameProgramm="Treatise of Desires"><span>Treatise of Desires</span><span><b>от 5 600 ₽</b></span></li>
+                <li class="d-flex justify-content-between item-programm" data-nameProgramm="Temptation"><span>Temptation</span><span><b>от 3 000 ₽</b></span></li>
+                <li class="d-flex justify-content-between item-programm" data-nameProgramm="Nonrandomness"><span>Nonrandomness</span><span><b>от 4 500 ₽</b></span></li>
+                <li class="d-flex justify-content-between item-programm" data-nameProgramm="Sirens"><span>Sirens</span> <span><span><b>8 000 ₽</b></span></span></li>
+                <li class="d-flex justify-content-between item-programm" data-nameProgramm="WeAreCrazy"><span>WeAreCrazy</span><span><b>от 10 000 ₽</b></span></li>
+                <li class="d-flex justify-content-between item-programm" data-nameProgramm="The Taming of the Shrew"><span>The Taming of the Shrew</span><span><b>от 7 600 ₽</b></span></li>
+                <li class="d-flex justify-content-between item-programm" data-nameProgramm="Infinity"><span>Infinity</span><span><b>от 3 000 ₽</b></span></li>
+                <li class="d-flex justify-content-between item-programm" data-nameProgramm="Solo"><span>Solo</span><span><b>от 6 500 ₽</b></span></li>
+              </ul>
+              <button class="btn btn_none-style-btn text-green ml-2 d-none" id="btn-show-price-list">Посмотреть все программы</button>
+            </div>
+            <div class="col-5 position-relative">
+              <div class="servise__info-programs">
+                <div class="servise__info-programs__body">
+                  <p id="description">Самое быстрое наслаждение, заряженное
+                    на все 100. Начни рабочий день
+                    с небольшого отдыха.</p>
+                    <div id="description-price">
+                      <div>
+                        <p>C 1 девушкой</p>
+                        <p>30 минут</p>
+                        <p>1 900 руб.</p>
+                      </div>
+                    </div>
+                </div>
+                <button class="btn btn_green mt-5" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Записатся</button>
+              </div>
+            </div>
+          </div>
+          <div class="row d-xl-none">
+              <div class="col-12">
+                <h2 class="title title_big home__title">Программы</h2>
+                <h3 class="title text-dark title_medium servise__sub-title mb-5">мужского спа</h3>
+              </div>
+            <div class="accordion" id="accordionExample">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#Burlesque" aria-expanded="true" aria-controls="Burlesque">
+                      Burlesque
+                    </button>
+                  </h5>
+                </div>
+                <div id="Burlesque" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                  <div class="card-body">
+                    <p>
+                      ...Пенное джакузи, наслаждение ласками девушки,поцелуи и взбитые сливки слизанные с вашего тела...
+                      Сыграем?
+                    </p>
+                    <div class="description-price_mobile">
+                      <div>
+                        <p>C 1 девушкой/120минут</p>
+                        <p><b>6 000 руб.</b></p>
+                      </div>
+                      <button class="btn btn_green" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Записатся</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#Foamy" aria-expanded="true" aria-controls="Foamy">
+                      Foamy euphoria
+                    </button>
+                  </h5>
+                </div>
+                <div id="Foamy" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                  <div class="card-body">
+                    <p>
+                      Самое быстрое наслаждение, заряженное
+                      на все 100. Начни рабочий день
+                      с небольшого отдыха.
+                    </p>
+                    <div class="description-price_mobile">
+                      <div>
+                        <p>C 1 девушкой/30минут</p>
+                        <p><b>1 900 руб.</b></p>
+                      </div>
+                      <button class="btn btn_green" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Записатся</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#Treatise" aria-expanded="true" aria-controls="Treatise">
+                      Treatise of Desires
+                    </button>
+                  </h5>
+                </div>
+                <div id="Treatise" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                  <div class="card-body">
+                    <p>
+                      Воплоти страсти в любой позе Камасутры.
+                    </p>
+                    <div class="description-price_mobile">
+                      <div>
+                        <p>C 1 девушкой/60минут</p>
+                        <p><b>5 600 руб.</b></p>
+                      </div>
+                      <div>
+                        <p>C 1 девушкой/90минут</p>
+                        <p><b>6 900 руб.</b></p>
+                      </div>
+                      <button class="btn btn_green" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Записатся</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#Temptation" aria-expanded="true" aria-controls="Temptation">
+                      Temptation
+                    </button>
+                  </h5>
+                </div>
+                <div id="Temptation" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                  <div class="card-body">
+                    <p>
+                      Самые расслабляющие техники незаметно переходящие в эротизм. Активные ласки только в Вашу сторону.
+                    </p>
+                    <div class="description-price_mobile">
+                      <div>
+                        <p>C 1 девушкой/60минут</p>
+                        <p><b>3 000 руб.</b></p>
+                      </div>
+                      <button class="btn btn_green" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Записатся</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#Nonrandomness" aria-expanded="true" aria-controls="Nonrandomness">
+                      Nonrandomness
+                    </button>
+                  </h5>
+                </div>
+                <div id="Nonrandomness" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                  <div class="card-body">
+                    <p>
+                      В шаге от соблазнительных поцелуев и нежных покусываний до стретты оральных удовольствий.
+                    </p>
+                    <div class="description-price_mobile">
+                      <div>
+                        <p>C 1 девушкой/60минут</p>
+                        <p><b>4 500 руб.</b></p>
+                      </div>
+                      <div>
+                        <p>C 1 девушкой/60минут</p>
+                        <p><b>6 200 руб.</b></p>
+                      </div>
+                      <button class="btn btn_green" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Записатся</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#Sirens" aria-expanded="true" aria-controls="Sirens">
+                      Sirens
+                    </button>
+                  </h5>
+                </div>
+                <div id="Sirens" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                  <div class="card-body">
+                    <p>
+                      Чувствуешь как они манят тебя? Две девушки,с какой дойти до конца, решать только тебе.
+                    </p>
+                    <div class="description-price_mobile">
+                      <div>
+                        <p>C 2 девушками/90минут</p>
+                        <p><b>8 000 руб.</b></p>
+                      </div>
+                      <div>
+                        <p>C 2 девушками/120минут</p>
+                        <p><b>11 000 руб.</b></p>
+                      </div>
+                      <button class="btn btn_green" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Записатся</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#crazy" aria-expanded="true" aria-controls="crazy">
+                      We are crazy
+                    </button>
+                  </h5>
+                </div>
+                <div id="crazy" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                  <div class="card-body">
+                    <p>
+                      Мои подружки-лесбиянки.
+                      Попробуешь стать их другом?
+                    </p>
+                    <div class="description-price_mobile">
+                      <div>
+                        <p>C 2 девушками/60минут</p>
+                        <p><b>10 000 руб.</b></p>
+                      </div>
+                      <div>
+                        <p>C 2 девушками/90минут</p>
+                        <p><b>12 500 руб.</b></p>
+                      </div>
+                      <div>
+                        <p>C 2 девушками/120минут</p>
+                        <p><b>15 000 руб.</b></p>
+                      </div>
+                      <button class="btn btn_green" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Записатся</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#Shrew" aria-expanded="true" aria-controls="Shrew">
+                      The Taming of the Shrew
+                    </button>
+                  </h5>
+                </div>
+                <div id="Shrew" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                  <div class="card-body">
+                    <p>
+                      Ты пробовал совместить боль и ласку,унижение и уважение? Госпожа знает подход к Боссу.
+                    </p>
+                    <div class="description-price_mobile">
+                      <div>
+                        <p>C 1 девушкой/60минут</p>
+                        <p><b>7 000 руб.</b></p>
+                      </div>
+                      <div>
+                        <p>C 1 девушкой/90минут</p>
+                        <p><b>9 500 руб.</b></p>
+                      </div>
+                      <div>
+                        <p>C 1 девушкой/120минут</p>
+                        <p><b>11 000 руб.</b></p>
+                      </div>
+                      <button class="btn btn_green" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Записатся</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#Infinity" aria-expanded="true" aria-controls="Infinity">
+                      Infinity
+                    </button>
+                  </h5>
+                </div>
+                <div id="Infinity" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                  <div class="card-body">
+                    <p>
+                      Каждый знает об этой программе, потому что составляет её сам. Только лучшие техники на твой выбор.
+                    </p>
+                    <div class="description-price_mobile">
+                      <div>
+                        <p>C 1 девушкой/60минут</p>
+                        <p><b>6 500 руб.</b></p>
+                      </div>
+                      <div>
+                        <p>C 1 девушкой/90минут</p>
+                        <p><b>8 000 руб.</b></p>
+                      </div>
+                      <div>
+                        <p>C 1 девушкой/120минут</p>
+                        <p><b>9 900 руб.</b></p>
+                      </div>
+                      <button class="btn btn_green" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Записатся</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#Solo" aria-expanded="true" aria-controls="Solo">
+                      Solo
+                    </button>
+                  </h5>
+                </div>
+                <div id="Solo" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                  <div class="card-body">
+                    <p>
+                      Стань режиссёром фильма, где девушка ласкает себя игрушками, не забывая о тебе.
+                    </p>
+                    <div class="description-price_mobile">
+                      <div>
+                        <p>C 1 девушкой/60минут</p>
+                        <p><b>6 500 руб.</b></p>
+                      </div>
+                      <div>
+                        <p>C 1 девушкой/90минут</p>
+                        <p><b>8 000 руб.</b></p>
+                      </div>
+                      <button class="btn btn_green" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Записатся</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- contact ---------------------------------------->
+      <div class="section contact" data-anchor="contact" id="contact-mobile">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-6">
+              <h2 class="title title_big home__title">Рады тебе</h2>
+              <h3 class="title text-dark title_medium servise__sub-title mb-5">Контакты</h3>
+              <div class="mb-5">
+                <p class="text-green">Мы находимся по адресу:</p>
+                <h5>г. Самара,<br>
+                  ул. Самарская д. 161а</h5>
+              </div>
+              <div class="mb-5">
+                <p class="text-green">Звоните по телефону:</p>
+                <h5>8 (927) 006-30-06</h5>
+              </div>
+              <button class="btn d-none d-lg-block" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Записатся</button>
+            </div>
+            <div class="col-12 col-lg-6 mt-5">
+              <div class="contact__info">
+                <h6 class="mb-3">
+                  Вы ищите где расслабиться после
+                  трудного дня в Самаре?
+                </h6>
+                <button class="btn d-block d-lg-none w-75 mx-auto" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Записатся</button>
+                <p class="d-none d-lg-block">
+                  Мужской спа-салон «Эмбарго» предложит
+                  на выбор 10 качественных spa программ,
+                  обратите внимание на программу «Burlesque»
+                  с пенным джакузи и продолжительностью
+                  120 минут, а также на «Infinity» где ты сам
+                  можешь составить себе индивидуальную
+                  программу. Все мастера мужского салона
+                  уникальные, прошедшие отбор на
+                  изумительную красоту, где каждая девушка
+                  имеет свой стиль и свою изюминку, посмотрите
+                  анкеты и узнайте больше о наших мастерах.
+
+                  Мужской клуб «Эмбарго» - это нежный
+                  и расслабляющий отдых для мужчины в Самаре.
+                  Подарите себе незабываемый день в мужском
+                  спа, куда точно захочется вернуться.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ban position-fixed d-flex flex-wrap flex-xl-column justify-content-center">
+      <img src="img/warning/21+.png" alt="" class="mb-0 mb-xl-3 mr-3 mr-xl-0">
+      <img src="img/warning/not-sex.png" alt="">
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="fullPage.js-master/vendors/scrolloverflow.min.js"></script>
+    <script type="text/javascript" src="fullPage.js-master/src/fullpage.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script> 
+    <script src="mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/castom-slider.js"></script>
+    <script src="js/common.js"></script>
+</body>
+</html>

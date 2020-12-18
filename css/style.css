@@ -33,9 +33,6 @@ html {
 .container {
   max-width: 1600px; }
 
-.bg-black {
-  background-color: #000; }
-
 p {
   margin-bottom: 0; }
 
@@ -116,6 +113,9 @@ a {
     .btn_call:hover {
       background-color: transparent; }
 
+.navbar {
+  background-color: rgba(0, 0, 0, 0.7); }
+
 .nav-link {
   font-size: 28px; }
 
@@ -193,7 +193,9 @@ a {
     top: 15px; } }
 
 .home {
-  background-image: url(../img/home/bg.jpg); }
+  background-image: url(../img/home/bg.jpg);
+  padding-top: 100px;
+  background-position-x: center; }
   .home__title {
     line-height: 35px; }
     .home__title span {
@@ -201,7 +203,7 @@ a {
   .home__discription {
     margin-left: 0px; }
   .home p {
-    width: 70%; }
+    width: 58%; }
 
 .girl {
   background-color: #04060C; }
@@ -367,3 +369,6 @@ a {
   bottom: 10px; }
   .ban img {
     width: 60px; }
+
+.bg-black {
+  background-color: #000; }

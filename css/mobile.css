@@ -1,0 +1,31 @@
+.girl {
+  padding: 140px 0 185px 0; }
+  .girl .title {
+    font-size: 42px; }
+  .girl__sub-title {
+    top: -146px; }
+
+.slider-girl img {
+  width: 150px; }
+
+.contact__info {
+  padding: 45px 10px 45px 10px; }
+
+.servise {
+  background-position-x: right; }
+
+@media (min-width: 420px) {
+  .slider-girl {
+    right: -45px; } }
+
+@media (min-width: 440px) {
+  .girl {
+    padding: 140px 0 210px 0; }
+  .slider-girl img {
+    width: 185px; } }
+
+@media (min-width: 520px) {
+  .girl {
+    padding: 140px 0 225px 0; }
+  .slider-girl img {
+    width: 215px; } }
