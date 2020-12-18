@@ -12,20 +12,43 @@
   padding: 45px 10px 45px 10px; }
 
 .servise {
-  background-position-x: right; }
+  background-position-x: -785px; }
+  .servise .card-header {
+    padding: 10px 15px; }
+    .servise .card-header .btn {
+      font-size: 14px !important; }
+
+.crossed-text {
+  text-decoration: line-through; }
+
+@media (min-width: 330px) {
+  .servise .card-header {
+    padding: 10px 15px; }
+    .servise .card-header .btn {
+      font-size: 16px !important; } }
 
 @media (min-width: 420px) {
   .slider-girl {
-    right: -45px; } }
+    right: -45px; }
+  .servise .card-header {
+    padding: 10px 30px; }
+    .servise .card-header .btn {
+      font-size: 18px !important; } }
 
 @media (min-width: 440px) {
   .girl {
     padding: 140px 0 210px 0; }
   .slider-girl img {
-    width: 185px; } }
+    width: 185px; }
+  .servise .card-header .btn {
+    font-size: 20px !important; } }
 
 @media (min-width: 520px) {
   .girl {
     padding: 140px 0 225px 0; }
   .slider-girl img {
-    width: 215px; } }
+    width: 215px; }
+  .servise .card-header {
+    padding: 10px 80px; }
+    .servise .card-header .btn {
+      font-size: 20px !important; } }

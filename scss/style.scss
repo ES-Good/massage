@@ -524,10 +524,16 @@ a{
     bottom: 10px;
 
     img{
-        width: 60px;
+        width: 55px;
     }
 }
 
 .bg-black{
     background-color: #000;
+}
+
+.modal{
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+    background-color: rgba(0, 0, 0, 0.4);
 }
