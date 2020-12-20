@@ -141,20 +141,37 @@ a {
   .warning button {
     width: 250px; }
 
-.modal-content {
+.welcome {
   border: 1px solid #9f957f;
   background-image: url(../img/modal/bg.jpg);
   background-size: 260%;
   background-position-x: -400px;
   background-repeat: no-repeat; }
-  .modal-content .btn {
+  .welcome .btn {
     width: 200px;
     margin: 0 auto;
     font-size: 18px;
     padding: 10px 0; }
-  .modal-content input {
+  .welcome input {
     background-color: #1c1e20;
     padding: 10px; }
+
+.thanks {
+  border: 1px solid #9f957f;
+  background-image: url(../img/modal/thanks.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 210px;
+  position: relative; }
+  .thanks h6 {
+    font-family: 'Montserrat';
+    font-weight: 200; }
+  .thanks img {
+    position: absolute;
+    width: 60px;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%); }
 
 .mouse {
   position: absolute;

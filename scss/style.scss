@@ -196,7 +196,7 @@ a{
     }
 }
 
-.modal-content{
+.welcome{
     border: 1px solid #9f957f;
     background-image: url(../img/modal/bg.jpg);
     background-size: 260%;
@@ -213,6 +213,28 @@ a{
     input{
         background-color: #1c1e20;
         padding: 10px;
+    }
+}
+
+.thanks{
+    border: 1px solid #9f957f;
+    background-image: url(../img/modal/thanks.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 210px;
+    position: relative;
+
+    h6{
+     font-family: 'Montserrat';
+     font-weight: 200;
+    }
+
+    img{
+        position: absolute;
+        width: 60px;
+        top: 200px;
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
 
