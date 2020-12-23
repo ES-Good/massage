@@ -504,6 +504,10 @@ a{
 
 .shares-slider{
     width: 100%;
+
+    .slick-active{
+        padding: 0;
+    }
 }
 
 p{

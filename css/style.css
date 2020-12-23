@@ -353,6 +353,8 @@ a {
 
 .shares-slider {
   width: 100%; }
+  .shares-slider .slick-active {
+    padding: 0; }
 
 p {
   margin-bottom: 0; }
