@@ -10,7 +10,7 @@
   font-weight: normal;
   font-style: normal; }
 
-.home, .servise, .contact, .vacancies {
+.home, .servise, .contact {
   background-repeat: no-repeat;
   background-size: cover; }
 
@@ -303,15 +303,21 @@ a {
   .contact P {
     color: #838383; }
 
-.vacancies {
-  background-image: url(../img/vacancies/bg.png);
-  background-color: #000; }
+.shares {
+  background-image: url(../img/shares/bg.png);
+  background-color: #000;
+  padding-top: 100px;
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: cover; }
 
 .slider-girl {
   width: 100%;
   margin: 0;
   transform: translateX(10%);
   right: 30px; }
+  .slider-girl .slick-list {
+    overflow: visible; }
 
 .prev-girl,
 .next-girl {
@@ -345,8 +351,8 @@ a {
   .slider-girl__slide:not(.slick-active) {
     filter: grayscale(1); }
 
-.slick-list {
-  overflow: visible; }
+.shares-slider {
+  width: 100%; }
 
 p {
   margin-bottom: 0; }

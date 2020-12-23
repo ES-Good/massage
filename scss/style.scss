@@ -435,16 +435,25 @@ a{
     }
 }
 
-.vacancies{
-    @extend %bg-img;
-    background-image: url(../img/vacancies/bg.png);
+.shares{
+    background-image: url(../img/shares/bg.png);
     background-color: #000;
+    padding-top:100px;
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: cover;
 }
+
 .slider-girl{
     width: 100%;
     margin: 0;
     transform: translateX(10%);
     right: 30px;
+
+    .slick-list{
+        overflow: visible;
+    }
+    
 }
 
 .prev-girl,
@@ -493,8 +502,8 @@ a{
 }
 
 
-.slick-list{
-    overflow: visible;
+.shares-slider{
+    width: 100%;
 }
 
 p{

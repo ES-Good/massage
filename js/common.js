@@ -251,3 +251,11 @@ document.querySelector('.navbar-toggler').onclick = function () {
 	document.querySelector('.navbar').classList.toggle('bg-black')
 }
 
+$('.shares-slider').slick({
+	dots: false,
+	infinite: true,
+	speed: 3000,
+	slidesToShow: 1,
+	centerMode: true,
+	variableWidth: true
+  });
