@@ -252,10 +252,21 @@ document.querySelector('.navbar-toggler').onclick = function () {
 }
 
 $('.shares-slider').slick({
+	prevArrow: $('.arrow-shares .arrow-shares__prev'),
+	nextArrow: $('.arrow-shares .arrow-shares__next'),
 	dots: false,
-	infinite: true,
-	speed: 3000,
+	arrows : false,
+	infinite: false,
+	speed: 1000,
 	slidesToShow: 1,
-	centerMode: true,
+	centerMode: false,
 	variableWidth: true
+  });
+
+  $('.arrow-shares__prev').on('click', function() {
+	$('.shares-slider').slick('slickPrev');
+  });
+
+  $('.arrow-shares__next').on('click', function() {
+	$('.shares-slider').slick('slickNext');
   });

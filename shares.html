@@ -17,15 +17,26 @@
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content rounded-0">
-          <div class="row">
-            <div class="col-5 d-none d-md-block"></div>
-            <div class="col-12 col-md-7">
-              <h4 class="title_modal my-5 text-center">Записатся на услугу</h4>
-              <form action="" class="d-flex flex-column align-items-center">
-                <input type="text" class="my-3" placeholder="Представтесь">
-                <input type="tel" class="my-3" placeholder="+7(___) ___ __ __">
-                <button type="submit" class="btn my-3">Записатся</button>
-              </form>
+          <div class="welcome d-none">
+            <div class="row">
+              <div class="col-5 d-none d-md-block"></div>
+              <div class="col-12 col-md-7">
+                <h4 class="title_modal my-5 text-center">Записатся на услугу</h4>
+                <form action="" class="d-flex flex-column align-items-center">
+                  <input type="text" class="my-3" placeholder="Представтесь">
+                  <input type="tel" class="my-3" placeholder="+7(___) ___ __ __">
+                  <button type="submit" class="btn my-3">Записатся</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="thanks">
+            <div class="row">
+              <div class="col-12">
+                <h4 class="title_modal text-center">Добро пожаловать!</h4>
+                <h6 class="text-center">Ожидайте нашего звонка</h6>
+                <img src="img/modal/ok.svg" alt="">
+              </div>
             </div>
           </div>
         </div>
@@ -83,32 +94,55 @@
         <div class="shares__inner">
           <div class="row w-100">
             <div class="col-12">
-              <h1 class="title title_big home__title">Акции</h1>
+              <h1 class="title title_big home__title mb-5">Акции</h1>
             </div>
           </div>
           <div class="row w-100">
               <div class="shares-slider">
                 <div class="shares-slider__slide">
-                    Merry Christmas Sale - скидка 2021₽ на все! <br>
-                    Беспроигрышная лотерея всю зиму!
-                    <div class="shares-slider__slide__footer mt-5">
-                        <button class="btn btn_none-style-btn text-green">Зписаться</button>
-                    </div>
+                    <h3>Будь первым!</h3>
+                    <p>Скидка 25% на первое посещение</p>
+                      <button class="btn btn_green" data-toggle="modal" data-target="#exampleModal">Получить скидку</button>
                 </div>
                 <div class="shares-slider__slide">
-                    Merry Christmas Sale - скидка 2021₽ на все! <br>
-                    Беспроигрышная лотерея всю зиму!
-                    <div class="shares-slider__slide__footer mt-5">
-                        <button class="btn btn_none-style-btn text-green">Зписаться</button>
-                    </div>
+                    <h3>Лучшие друзья.</h3>
+                    <p>Прийди в салон с друзьями, получи скидку 20% на общий чек.</p>
+                      <button class="btn btn_green" data-toggle="modal" data-target="#exampleModal">Получить скидку</button>
                 </div>
                 <div class="shares-slider__slide">
-                    Merry Christmas Sale - скидка 2021₽ на все! <br>
-                    Беспроигрышная лотерея всю зиму!
-                    <div class="shares-slider__slide__footer mt-5">
-                        <button class="btn btn_none-style-btn text-green">Зписаться</button>
-                    </div>
+                    <h3>VIP-такси.</h3> 
+                    <p>При заказе любой программы, за тобой приезжает дорогой автомобиль, в салоне которого будет ожидать соблазнительный водитель.</p>
+                      <button class="btn btn_green" data-toggle="modal" data-target="#exampleModal">Получить скидку</button>
                 </div>
+                <div class="shares-slider__slide">
+                  <h3>Именинник?</h3>
+                  Скидка равна возрасту!
+                  <p>Действует на все программы от 6000 руб. 7 дней до 7 дней после дня рождения.</p>
+                    <button class="btn btn_green" data-toggle="modal" data-target="#exampleModal">Получить скидку</button>
+                </div>
+                <div class="shares-slider__slide">
+                  <h3>Дым.</h3> 
+                  <p>Приятный бонус за ожидание более 15 минут.</p>
+                    <button class="btn btn_green" data-toggle="modal" data-target="#exampleModal">Получить скидку</button>
+                </div>
+                <div class="shares-slider__slide">
+                  <h3>Каждый четверг</h3>
+                  <p>тематическая вечеринка</p>
+                    <button class="btn btn_green" data-toggle="modal" data-target="#exampleModal">Прийти</button>
+                </div>
+                <div class="shares-slider__slide">
+                  <h3>Каждый вторник</h3> 
+                  <p>скидка эксклюзив 30%</p>
+                    <button class="btn btn_green" data-toggle="modal" data-target="#exampleModal">Получить скидку</button>
+                </div>
+              </div>
+              <div class="box-arrow-shares">
+                <button class="arrow-shares arrow-shares__prev">
+                  <img src="img/shares/slider/arrow.png" alt="">
+                </button>
+                <button class="arrow-shares arrow-shares__next">
+                  <img src="img/shares/slider/arrow.png" alt="">
+                </button>
               </div>
           </div>
         </div>

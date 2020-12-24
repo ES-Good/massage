@@ -525,12 +525,40 @@ a{
     }
 }
 
+.shares__inner{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
 
 .shares-slider{
-    width: 100%;
+    width: 98%;
+    margin-left: 20px;
+
+
+    &__slide{
+        background-color: rgba($color: #000000, $alpha: .7);
+        margin: 0 20px;
+        width: 400px;
+        min-height: 260px;
+        border: 1px solid #948b76;
+        padding: 15px 20px;
+        position: relative;
+
+        h3{
+            font-family: "BanderaProHeavy";
+        }
+    }
+
+    .btn{
+        align-self: end;
+        position: absolute;
+        bottom: 20px;
+    }
 
     .slick-active{
-        padding: 0;
+        padding: 15px 20px;
     }
 }
 
@@ -573,4 +601,26 @@ a{
     -webkit-backdrop-filter: blur(3px);
     backdrop-filter: blur(3px);
     background-color: rgba(0, 0, 0, 0.4);
+}
+
+.box-arrow-shares{
+    position: absolute;
+    left: 0;
+    bottom: -110px;
+}
+
+.arrow-shares{
+    background-color: transparent;
+    border: none;
+
+    &:focus{
+        outline: none;
+    }
+
+    &__prev{
+        margin-right: 25px;
+        img{
+            transform: rotate(-180deg);
+        }
+    }
 }

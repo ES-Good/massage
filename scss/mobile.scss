@@ -22,6 +22,26 @@
     }
 }
 
+.shares{
+    padding-top: 215px;
+    background-position: center;
+
+    &__inner{
+        position: relative;
+    }
+}
+
+.shares-slider{
+    &__slide{
+        width: 300px;
+        height: 300px;
+
+        .btn{
+            width: 80%;
+        }
+    }
+}
+
 .servise{
     background-position-x: -785px;
 

@@ -11,6 +11,18 @@
 .contact__info {
   padding: 45px 10px 45px 10px; }
 
+.shares {
+  padding-top: 215px;
+  background-position: center; }
+  .shares__inner {
+    position: relative; }
+
+.shares-slider__slide {
+  width: 300px;
+  height: 300px; }
+  .shares-slider__slide .btn {
+    width: 80%; }
+
 .servise {
   background-position-x: -785px; }
   .servise .card-header {
