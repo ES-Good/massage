@@ -23,21 +23,41 @@
 }
 
 .shares{
-    padding-top: 215px;
+    background-image: none;
+    background-color: #000;
+    padding-top: 100px;
     background-position: center;
 
     &__inner{
         position: relative;
+        transform: none;
+        top: auto;
     }
 }
 
 .shares-slider{
     &__slide{
+        position: relative;
         width: 300px;
-        height: 300px;
+        margin: 20px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        h3{
+            text-align: center;
+        }
+
+        img{
+            position: absolute;
+            width: 150px;
+            left: -15px;
+            top: -15px;
+        }
 
         .btn{
             width: 80%;
+            margin: 0 auto;
         }
     }
 }
